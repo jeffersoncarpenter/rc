@@ -1,2 +1,2 @@
 all:
-	idris --codegen javascript --package canvas rc.idr -o rc.js
+	idris --codegen javascript -p canvas -p matrix rc.idr -o rc.js
