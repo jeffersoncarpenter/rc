@@ -1,31 +1,11 @@
 module Main
 
 import Canvas
-import Gfx.Gfx
-
-
-data MapCellType = EmptyCell
-                 | FilledCell
-
-
-||| takes its dimensions in units
-Map : (Nat, Nat) -> Type
-Map (x, y) = Matrix x y MapCellType
-
-mkEmptyMap : (dimensions : (Nat, Nat)) -> Map dimensions
-mkEmptyMap (x, y) = replicate x $ replicate y EmptyCell
-
-mapSize : (Nat, Nat)
-mapSize = (10, 10)
+import Game
+import Map
 
 natToFloat : Nat -> Float
 natToFloat = cast . cast . cast
-
-data Game = MkGame (Map mapSize)
-
-
-drawGame : Game -> IO ()
-drawGame (MkGame map) = return ()
 
 
 animate : Game -> Int -> IO ()
@@ -47,15 +27,16 @@ runOnLoad : IO () -> IO ()
 runOnLoad io = mkForeign
                (FFun "(%0)()" [FFunction FUnit (FAny (IO ()))] FUnit) (\_ => io)
 
-createGame : Game
-createGame = MkGame (mkEmptyMap mapSize)
+createGame : Context2D -> Game
+createGame ctx = MkGame (mkEmptyMap mapSize) ctx
 
 launchGame : IO ()
 launchGame = do
   onClickCanvas clickFunc
-  requestAnimationFrame $ animate createGame
+  elem <- getElementById "canvas"
+  ctx <- getContext2D elem
+  requestAnimationFrame $ animate (createGame ctx)
   return ()
-
 
 main : IO ()
 main = runOnLoad launchGame
