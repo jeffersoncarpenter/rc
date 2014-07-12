@@ -6,21 +6,15 @@ import Gfx.MVMatrix
 %access public
 
 
-data Gfx = MkGfx (List MVMatrix) Context2D
-
-pushMat : Gfx -> Gfx
-pushMat (MkGfx (mv::mvs) c) = MkGfx (mv::mv::mvs) c
-
-popMat : Gfx -> Gfx
-popMat (MkGfx (mv::mvs) c) = MkGfx mvs c
+data Gfx = MkGfx MVMatrix Context2D
 
 multMat : MVMatrix -> Gfx -> Gfx
-multMat m (MkGfx (mv::mvs) c) = MkGfx ((multMatMat mv m)::mvs) c
+multMat m (MkGfx mv c) = MkGfx (multMatMat mv m) c
                                     
 
 -- create a Gfx with the identity matrix
 mkGfx : Context2D -> Gfx
-mkGfx canvas = MkGfx [identityMatrix] canvas
+mkGfx canvas = MkGfx identityMatrix canvas
 
 
 -- some transforms
