@@ -1,6 +1,7 @@
 module Main
 
 import Canvas
+import Draw
 import Game
 import Map
 
@@ -30,13 +31,10 @@ runOnLoad io = mkForeign
 createGame : Context2D -> Game
 createGame ctx = MkGame (mkEmptyMap mapSize) ctx
 
-launchGame : IO ()
-launchGame = do
+main : IO ()
+main = runOnLoad $ do
   onClickCanvas clickFunc
   elem <- getElementById "canvas"
   ctx <- getContext2D elem
   requestAnimationFrame $ animate (createGame ctx)
   return ()
-
-main : IO ()
-main = runOnLoad launchGame

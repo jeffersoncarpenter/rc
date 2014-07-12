@@ -20,7 +20,3 @@ unitsPerPixel : Vect 2 Float
 unitsPerPixel = map (1/) pixelsPerUnit
 
 
-drawGame : Game -> IO ()
-drawGame (MkGame map ctx) = return ()
-  
-

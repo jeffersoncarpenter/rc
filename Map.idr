@@ -9,12 +9,12 @@ data MapCellType = EmptyCell
 
 
 ||| takes its dimensions in units
-Map : (Nat, Nat) -> Type
-Map (x, y) = Matrix x y MapCellType
+Map : Vect 2 Nat -> Type
+Map [x, y] = Matrix x y MapCellType
 
-mkEmptyMap : (dimensions : (Nat, Nat)) -> Map dimensions
-mkEmptyMap (x, y) = replicate x $ replicate y EmptyCell
+mkEmptyMap : (dimensions : Vect 2 Nat) -> Map dimensions
+mkEmptyMap [x, y] = replicate x $ replicate y EmptyCell
 
-mapSize : (Nat, Nat)
-mapSize = (10, 10)
+mapSize : Vect 2 Nat
+mapSize = [10, 10]
 
