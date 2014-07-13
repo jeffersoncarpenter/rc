@@ -5,5 +5,5 @@ import Map
 
 %access public
 
-data Game = MkGame Map Context2D
+data Game = MkGame (dimensions : Vect 2 Nat ** Map dimensions) Context2D
 

@@ -1525,6 +1525,29 @@ var _idris_Canvas_46_Context2D_46_context2DPtr = function(oldbase){
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
+var _idris_Main_46_createGame$1 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 1] = i$ret;
+  i$ret = new i$CON(0,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],null,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris_Main_46_createGame$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 1] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 1;
+  i$CALL(_idris_Main_46_createGame$1,[oldbase,myoldbase]);
+  i$CALL(_idris_Map_46_mkEmptyMap,[myoldbase]);
+}
+var _idris_Main_46_createGame = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$CALL(_idris_Main_46_createGame$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Map_46_mapSize,[myoldbase]);
+}
 var _idris_Draw_46_drawGame = function(oldbase){
   var myoldbase;
   i$valstack_top += 6;
@@ -1540,11 +1563,11 @@ var _idris_Draw_46_drawGame = function(oldbase){
 var _idris_Draw_46_drawMap = function(oldbase){
   var myoldbase;
   i$valstack_top += 4;
-  i$valstack[i$valstack_base + 2] = null;
   i$valstack[i$valstack_base + 3] = null;
-  i$valstack[i$valstack_base + 4] = new i$CON(65633,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65633,null);
-  i$valstack[i$valstack_base + 5] = new i$CON(65664,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65664,null);
-  i$ret = new i$CON(65715,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65715,null);
+  i$valstack[i$valstack_base + 4] = null;
+  i$valstack[i$valstack_base + 5] = new i$CON(65633,[i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65633,null);
+  i$valstack[i$valstack_base + 6] = new i$CON(65664,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65664,null);
+  i$ret = new i$CON(65715,[i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6]],_idris__123_APPLY0_125_$65715,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -2871,11 +2894,13 @@ var _idris_Draw_46__123_drawGame1_125_ = function(oldbase){
   i$valstack_top += 4;
   i$valstack[i$valstack_base + 3] = null;
   i$valstack[i$valstack_base + 4] = null;
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_base + 5] = null;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 1];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
-  i$valstack_top += 2;
+  i$valstack_top += 3;
   i$CALL(_idris_Draw_46__123_drawGame1_125_$0,[oldbase,myoldbase]);
   i$CALL(_idris_Draw_46_drawMap,[myoldbase]);
 }
@@ -2915,43 +2940,35 @@ var _idris_Canvas_46__123_getElementById1_125_ = function(oldbase){
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
-var _idris_Main_46__123_main1_125_$2 = function(oldbase,myoldbase){
+var _idris_Main_46__123_main1_125_$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 3] = i$ret;
   i$valstack[i$valstack_base + 4] = i$CON$65702;
   i$ret = new i$CON(65715,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65715,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
-var _idris_Main_46__123_main1_125_$1 = function(oldbase,myoldbase){
+var _idris_Main_46__123_main1_125_$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 3] = i$ret;
-  i$valstack[i$valstack_base + 3] = new i$CON(0,[i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base]],null,null);
   i$valstack[i$valstack_base + 4] = null;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 3];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 4];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 2;
-  i$CALL(_idris_Main_46__123_main1_125_$2,[oldbase,myoldbase]);
-  i$CALL(_idris_Main_46_animate,[myoldbase]);
-}
-var _idris_Main_46__123_main1_125_$0 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 3] = i$ret;
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 3];
-  myoldbase = i$valstack_base;
-  i$valstack_base = i$valstack_top;
-  i$valstack_top += 1;
   i$CALL(_idris_Main_46__123_main1_125_$1,[oldbase,myoldbase]);
-  i$CALL(_idris_Map_46_mkEmptyMap,[myoldbase]);
+  i$CALL(_idris_Main_46_animate,[myoldbase]);
 }
 var _idris_Main_46__123_main1_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 4;
   i$valstack[i$valstack_base + 1] = null;
   i$valstack[i$valstack_base + 2] = null;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
+  i$valstack_top += 1;
   i$CALL(_idris_Main_46__123_main1_125_$0,[oldbase,myoldbase]);
-  i$CALL(_idris_Map_46_mapSize,[myoldbase]);
+  i$CALL(_idris_Main_46_createGame,[myoldbase]);
 }
 var _idris_Canvas_46__123_requestAnimationFrame1_125_ = function(oldbase){
   var myoldbase;
@@ -3061,23 +3078,24 @@ var _idris_Draw_46__123_drawGame4_125_$1 = function(oldbase,myoldbase){
   i$valstack_base = oldbase;
 }
 var _idris_Draw_46__123_drawGame4_125_$0 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 10] = i$ret;
+  i$valstack[i$valstack_base + 11] = i$ret;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 5];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base];
-  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base];
   i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 7];
   i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 8];
   i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 9];
   i$valstack[i$valstack_top + 6] = i$valstack[i$valstack_base + 10];
+  i$valstack[i$valstack_top + 7] = i$valstack[i$valstack_base + 11];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
-  i$valstack_top += 7;
+  i$valstack_top += 8;
   i$CALL(_idris_Draw_46__123_drawGame4_125_$1,[oldbase,myoldbase]);
   i$CALL(_idris_Draw_46_drawGame_95_case,[myoldbase]);
 }
 var _idris_Draw_46__123_drawGame4_125_ = function(oldbase){
   var myoldbase;
-  i$valstack_top += 8;
+  i$valstack_top += 9;
   i$valstack[i$valstack_base + 3] = null;
   i$valstack[i$valstack_base + 4] = null;
   i$valstack[i$valstack_base + 5] = null;
@@ -3085,6 +3103,7 @@ var _idris_Draw_46__123_drawGame4_125_ = function(oldbase){
   i$valstack[i$valstack_base + 7] = null;
   i$valstack[i$valstack_base + 8] = null;
   i$valstack[i$valstack_base + 9] = null;
+  i$valstack[i$valstack_base + 10] = null;
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$CALL(_idris_Draw_46__123_drawGame4_125_$0,[oldbase,myoldbase]);
@@ -3835,11 +3854,11 @@ var _idris__64_Prelude_46_Traversable_46_Traversable_36_Vect_32_n = function(old
 var _idris_Draw_46_drawGame_95_case = function(oldbase){
   var myoldbase;
   i$valstack_top += 6;
-  i$PROJECT(i$valstack[i$valstack_base + 6],7,2);
-  i$PROJECT(i$valstack[i$valstack_base + 8],9,2);
-  i$valstack[i$valstack_base + 11] = 0.0;
+  i$PROJECT(i$valstack[i$valstack_base + 7],8,2);
+  i$PROJECT(i$valstack[i$valstack_base + 9],10,2);
   i$valstack[i$valstack_base + 12] = 0.0;
-  i$ret = new i$CON(65629,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 11],i$valstack[i$valstack_base + 12],i$valstack[i$valstack_base + 7],i$valstack[i$valstack_base + 9]],_idris__123_APPLY0_125_$65629,null);
+  i$valstack[i$valstack_base + 13] = 0.0;
+  i$ret = new i$CON(65629,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 12],i$valstack[i$valstack_base + 13],i$valstack[i$valstack_base + 8],i$valstack[i$valstack_base + 10]],_idris__123_APPLY0_125_$65629,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }

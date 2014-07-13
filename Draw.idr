@@ -32,15 +32,15 @@ drawMapRow ctx cs = do
   traverse (\m => drawMapCell ctx m $> translate ctx 1 0) cs
   restore ctx
 
-drawMap : Context2D -> Map -> IO ()
-drawMap ctx (MkMap (dimensions ** cells)) = do
+drawMap : Context2D -> (Map dimensions) -> IO ()
+drawMap ctx (MkMap cells) = do
   save ctx
   traverse (\m => drawMapRow ctx m $> translate ctx 0 1) cells
   restore ctx
 
 
 drawGame : Game -> IO ()
-drawGame (MkGame map ctx) = do
+drawGame (MkGame (d ** map) ctx) = do
   save ctx
   (let [x, y] = canvasDimensions in clearRect ctx 0 0 x y)
   scale ctx pixelsPerUnit pixelsPerUnit

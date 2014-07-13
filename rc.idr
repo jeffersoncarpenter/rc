@@ -24,7 +24,7 @@ clickFunc _ = putStr "HELLO"
 
 
 createGame : Context2D -> Game
-createGame ctx = MkGame (mkEmptyMap mapSize) ctx
+createGame ctx = MkGame (mapSize ** mkEmptyMap mapSize) ctx
 
 
 main : IO ()
