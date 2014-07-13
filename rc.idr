@@ -25,7 +25,7 @@ clickFunc _ = putStr "HELLO"
 
 
 createGame : Context2D -> Game [10, 10]
-createGame ctx = MkGame level1 ctx
+createGame ctx = spawnAPlayer $ MkGame level1 [] ctx
 
 
 main : IO ()

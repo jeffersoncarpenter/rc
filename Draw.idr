@@ -1,8 +1,10 @@
 module Draw
 
 import Canvas
+import Data.Floats
 import Game
 import Map
+import Player
 
 %access public
 
@@ -41,12 +43,19 @@ drawMap ctx (MkMap cells _) = do
   restore ctx
 
 
+drawPlayer : Context2D -> Player -> IO ()
+drawPlayer ctx (MkPlayer [x, y]) = do
+  arc ctx x y 0.4 0 (2 * pi)
+  stroke ctx
+
+
 drawGame : Game d -> IO ()
-drawGame (MkGame map ctx) = do
+drawGame (MkGame map players ctx) = do
   save ctx
   (let [x, y] = canvasDimensions in clearRect ctx 0 0 x y)
   scale ctx pixelsPerUnit pixelsPerUnit
   lineWidth ctx unitsPerPixel
   drawMap ctx map
+  traverse (drawPlayer ctx) players
   restore ctx
   

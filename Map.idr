@@ -10,5 +10,5 @@ data MapCellType = EmptyCell
 ||| takes its dimensions in units
 data Map : Vect 2 Nat -> Type where
   MkMap : Matrix x y MapCellType -> -- map cells
-          List (Fin x, Fin y) -> -- spawn points
+          Vect (S n) (Vect 2 Float) -> -- spawn points
           Map [x, y]
