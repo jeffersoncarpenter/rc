@@ -3,13 +3,14 @@ module Main
 import Canvas
 import Draw
 import Game
+import Level
 import Map
 
 natToFloat : Nat -> Float
 natToFloat = cast . cast . cast
 
 
-animate : Game -> Int -> IO ()
+animate : Game [x, y] -> Int -> IO ()
 animate game dt = do
   requestAnimationFrame $ animate game
   drawGame game
@@ -23,8 +24,8 @@ clickFunc : () -> IO ()
 clickFunc _ = putStr "HELLO"
 
 
-createGame : Context2D -> Game
-createGame ctx = MkGame (mapSize ** mkEmptyMap mapSize) ctx
+createGame : Context2D -> Game [10, 10]
+createGame ctx = MkGame level1 ctx
 
 
 main : IO ()

@@ -23,7 +23,9 @@ unitsPerPixel = 1 / pixelsPerUnit
 private
 drawMapCell : Context2D -> MapCellType -> IO ()
 drawMapCell ctx EmptyCell = strokeRect ctx 0 0 1 1
-drawMapCell ctx FilledCell = fillRect ctx 0 0 1 1
+drawMapCell ctx FilledCell = do
+  strokeRect ctx 0 0 1 1
+  fillRect ctx 0 0 1 1
   
 private
 drawMapRow : Context2D -> Vect x MapCellType -> IO ()
@@ -33,14 +35,14 @@ drawMapRow ctx cs = do
   restore ctx
 
 drawMap : Context2D -> (Map dimensions) -> IO ()
-drawMap ctx (MkMap cells) = do
+drawMap ctx (MkMap cells _) = do
   save ctx
   traverse (\m => drawMapRow ctx m $> translate ctx 0 1) cells
   restore ctx
 
 
-drawGame : Game -> IO ()
-drawGame (MkGame (d ** map) ctx) = do
+drawGame : Game d -> IO ()
+drawGame (MkGame map ctx) = do
   save ctx
   (let [x, y] = canvasDimensions in clearRect ctx 0 0 x y)
   scale ctx pixelsPerUnit pixelsPerUnit

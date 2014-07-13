@@ -2,8 +2,10 @@ module Game
 
 import Canvas
 import Map
+import Player
 
 %access public
 
-data Game = MkGame (dimensions : Vect 2 Nat ** Map dimensions) Context2D
+data Game : Vect 2 Nat -> Type where
+  MkGame : Map d -> Context2D -> Game d
 
