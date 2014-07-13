@@ -11,9 +11,8 @@ natToFloat = cast . cast . cast
 
 animate : Game -> Int -> IO ()
 animate game dt = do
-  drawGame game
   requestAnimationFrame $ animate game
-  putStr "ANTOEUH"
+  drawGame game
 
 
 onClickCanvas : (() -> IO ()) -> IO ()
@@ -32,9 +31,9 @@ createGame : Context2D -> Game
 createGame ctx = MkGame (mkEmptyMap mapSize) ctx
 
 main : IO ()
-main = runOnLoad $ do
+main = do
   onClickCanvas clickFunc
   elem <- getElementById "canvas"
   ctx <- getContext2D elem
-  requestAnimationFrame $ animate (createGame ctx)
+  animate (createGame ctx) 0
   return ()
