@@ -32,10 +32,10 @@ drawMapRow ctx cs = do
   traverse (\m => drawMapCell ctx m $> translate ctx 1 0) cs
   restore ctx
 
-drawMap : Context2D -> Map [x, y] -> IO ()
-drawMap ctx m = do
+drawMap : Context2D -> Map -> IO ()
+drawMap ctx (MkMap (dimensions ** cells)) = do
   save ctx
-  traverse (\m => drawMapRow ctx m $> translate ctx 0 1) m
+  traverse (\m => drawMapRow ctx m $> translate ctx 0 1) cells
   restore ctx
 
 

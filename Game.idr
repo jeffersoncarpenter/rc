@@ -5,5 +5,5 @@ import Map
 
 %access public
 
-data Game = MkGame (Map mapSize) Context2D
+data Game = MkGame Map Context2D
 
