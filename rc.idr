@@ -23,12 +23,9 @@ clickFunc : () -> IO ()
 clickFunc _ = putStr "HELLO"
 
 
-runOnLoad : IO () -> IO ()
-runOnLoad io = mkForeign
-               (FFun "(%0)()" [FFunction FUnit (FAny (IO ()))] FUnit) (\_ => io)
-
 createGame : Context2D -> Game
 createGame ctx = MkGame (mkEmptyMap mapSize) ctx
+
 
 main : IO ()
 main = do
