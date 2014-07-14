@@ -16,6 +16,8 @@ record PhysicsBody : Type where
                   (angle           : Float) ->
                   (angularVelocity : Float) ->
                   (momentOfInteria : ExFloat) ->
+                  -- charge and magnetism will be replaced with EM fields
+                  -- or something like that
                   (charge          : Float) ->
                   (magnetism       : Vect 2 Float) ->
                   -- radius is for collisions

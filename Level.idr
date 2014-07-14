@@ -14,4 +14,4 @@ level1 = MkMap [MkMapCell [0, 9],
                 MkMapCell [6, 9]]
          
          -- spawn points
-         [[2, 8]]
+         [[2.5, 8.5]]

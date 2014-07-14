@@ -36,8 +36,8 @@ drawMap ctx (MkMap cells _) = traverse (drawMapCell ctx) cells
 
 
 drawPlayer : Context2D -> Player -> IO ()
-drawPlayer ctx (MkPlayer [x, y]) = do
-  arc ctx x y 0.4 0 (2 * pi)
+drawPlayer ctx (MkPlayer pb) = do
+  (let [x, y] = position pb in arc ctx x y 0.4 0 (2 * pi))
   stroke ctx
 
 
