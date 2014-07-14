@@ -4,27 +4,14 @@ import Map
 
 %access public
 
--- cell type
-private
-e : MapCellType
-e = EmptyCell
-
-private
-f : MapCellType
-f = FilledCell
-
-
-level1 : Map [10, 10]
-level1 = MkMap [[e, e, e, e, e, e, e, e, e, e],
-                [e, e, e, e, e, e, e, e, e, e],
-                [e, e, e, e, e, e, e, e, e, e],
-                [e, e, e, e, e, e, e, e, e, e],
-                [e, e, e, e, e, e, e, e, e, e],
-                [e, e, e, e, e, e, e, e, e, e],
-                [e, e, e, e, e, e, e, e, e, e],
-                [e, e, e, e, e, e, e, e, e, e],
-                [e, e, e, e, e, e, e, e, e, e],
-                [f, f, f, f, f, f, f, f, f, f]]
+level1 : Map
+level1 = MkMap [MkMapCell [0, 9],
+                MkMapCell [1, 9],
+                MkMapCell [2, 9],
+                MkMapCell [3, 9],
+                MkMapCell [4, 9],
+                MkMapCell [5, 9],
+                MkMapCell [6, 9]]
          
          -- spawn points
          [[2, 8]]

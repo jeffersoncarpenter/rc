@@ -10,9 +10,9 @@ natToFloat : Nat -> Float
 natToFloat = cast . cast . cast
 
 
-animate : Game [x, y] -> Int -> IO ()
+animate : Game -> Int -> IO ()
 animate game dt = do
-  requestAnimationFrame $ animate game
+  requestAnimationFrame $ animate (tick game)
   drawGame game
 
 
@@ -24,7 +24,7 @@ clickFunc : () -> IO ()
 clickFunc _ = putStr "HELLO"
 
 
-createGame : Context2D -> Game [10, 10]
+createGame : Context2D -> Game
 createGame ctx = spawnAPlayer $ MkGame level1 [] ctx
 
 
