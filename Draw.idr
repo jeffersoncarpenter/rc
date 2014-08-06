@@ -31,8 +31,8 @@ drawMapCell ctx (MkMapCell [x, y]) = do
   fillRect ctx 0 0 1 1
   restore ctx
   
-drawMap : Context2D -> Map -> IO (List ())
-drawMap ctx (MkMap cells _) = traverse (drawMapCell ctx) cells
+-- drawMap : Context2D -> Map n -> IO (List ())
+-- drawMap ctx (MkMap cells _) = traverse (drawMapCell ctx) cells
 
 
 drawPlayer : Context2D -> Player -> IO ()
@@ -41,13 +41,13 @@ drawPlayer ctx (MkPlayer pb) = do
   stroke ctx
 
 
-drawGame : Game -> IO ()
+drawGame : Game n -> IO ()
 drawGame (MkGame map players ctx) = do
   save ctx
   (let [x, y] = canvasDimensions in clearRect ctx 0 0 x y)
   scale ctx pixelsPerUnit pixelsPerUnit
   lineWidth ctx unitsPerPixel
-  drawMap ctx map
+  -- drawMap ctx map
   traverse (drawPlayer ctx) players
   restore ctx
   

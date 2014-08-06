@@ -4,7 +4,7 @@ import Map
 
 %access public
 
-level1 : Map
+level1 : Map 7
 level1 = MkMap [MkMapCell [0, 9],
                 MkMapCell [1, 9],
                 MkMapCell [2, 9],

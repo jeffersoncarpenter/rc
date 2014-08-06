@@ -21,6 +21,6 @@ mkPlayer pos = MkPlayer $ MkPhysicsBody
                             [0.5, 0.5],
                             [0.5, -0.5]])
 
-instance HasPhysicsBodies Player where
-  getPhysicsBodies (MkPlayer pb) = []
+instance HasPhysicsBodies Player 1 where
+  getPhysicsBodies (MkPlayer pb) = [pb]
   setPhysicsBodies [pb] _ = MkPlayer pb
