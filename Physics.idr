@@ -2,6 +2,7 @@ module Physics
 
 import Data.HVect
 import ExFloat
+import Lens
 
 %access public
 
@@ -27,33 +28,12 @@ record PhysicsBody : Type where
                   PhysicsBody
 
 
-class HasPhysicsBodies o (n : Nat) where
-  getPhysicsBodies : o -> Vect n PhysicsBody
-  setPhysicsBodies : Vect n PhysicsBody -> o -> o
+class AsPhysicsBodies o (n : Nat) where
+  asPhysicsBodies : o -> (Vect n PhysicsBody -> Vect n PhysicsBody) -> o
 
 
-class AsPhysicsBody o (n : Nat) where
-  toPhysicsBody : o -> Vect n PhysicsBody
-  asPhysicsBody : o -> (Vect n PhysicsBody -> Vect n PhysicsBody) -> o
-
-
--- data Physics : (Vect k Nat) -> Type where
---   MkPhysics : HVect (map (\l => flip Vect $ (t ** HasPhysicsBodies t l))) ls ->
---   Physics ls
--- data Physics : Vect k (Nat, Type) -> Type where
---   EmPhysics : Physics []
---   MkPhysics : (HasPhysicsBodies t n) =>
---               t ->
---               Physics nts -> Physics ((n, t)::nts)
-
-
--- runPhysics : (Vect n PhysicsBody -> Vect n PhysicsBody) ->
---              Physics ts ->
---              Physics ts
--- runPhysics f EmPhysics = EmPhysics
--- runPhysics f (MkPhysics t p) =
---   let longresult = runPhysics $ (getPhysicsBodies t ++  in
---   MkPhysics (setPhysicsBodies (take n longvect) t) 
+instance (Lens (Vect n PhysicsBody) o) => AsPhysicsBodies o n where
+  asPhysicsBodies obj f = (mapL f) obj
 
 
 -- overlap : PhysicsBody -> PhysicsBody -> Float

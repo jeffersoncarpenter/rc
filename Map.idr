@@ -6,8 +6,8 @@ import Physics
 
 data MapCell = MkMapCell (Vect 2 Float) -- position
 
-instance HasPhysicsBodies MapCell 1 where
-  getPhysicsBodies (MkMapCell pos) = [MkPhysicsBody
+instance Lens (Vect 1 PhysicsBody)  MapCell where
+  getL (MkMapCell pos) = [MkPhysicsBody
                                     pos
                                     [0, 0]
                                     Infinity
@@ -20,7 +20,7 @@ instance HasPhysicsBodies MapCell 1 where
                                                  [-0.5, 0.5],
                                                  [0.5, 0.5],
                                                  [0.5, -0.5]])]
-  setPhysicsBodies _ c = c
+  setL _ c = c
 
 
 ||| takes its dimensions in units
@@ -48,7 +48,6 @@ mapCellToPhysicsBody (MkMapCell pos) = MkPhysicsBody
 
 
 
-instance HasPhysicsBodies (Map n) n where
-  getPhysicsBodies (MkMap cells _) =
-    map (\[a] => a) $ map getPhysicsBodies cells
-  setPhysicsBodies _ m = m
+instance Lens (Vect n PhysicsBody) (Map n) where
+  getL (MkMap cells _) = map (\[a] => a) $ map getL cells
+  setL _ m = m

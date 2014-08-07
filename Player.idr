@@ -21,6 +21,6 @@ mkPlayer pos = MkPlayer $ MkPhysicsBody
                             [0.5, 0.5],
                             [0.5, -0.5]])
 
-instance HasPhysicsBodies Player 1 where
-  getPhysicsBodies (MkPlayer pb) = [pb]
-  setPhysicsBodies [pb] _ = MkPlayer pb
+instance Lens (Vect 1 PhysicsBody) Player where
+  getL (MkPlayer pb) = [pb]
+  setL [pb] _ = MkPlayer pb
