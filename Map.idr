@@ -3,6 +3,7 @@ module Map
 import Physics
 
 %access public
+%default total
 
 data MapCell = MkMapCell (Vect 2 Float) -- position
 

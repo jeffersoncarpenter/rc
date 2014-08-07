@@ -5,6 +5,7 @@ import ExFloat
 import Lens
 
 %access public
+%default total
 
 
 data CollisionObject = ConvexPoly (List (Vect 2 Float))

@@ -6,6 +6,8 @@ import Game
 import Level
 import Map
 
+%default total
+
 data FunctorVect : Type
 
 
@@ -13,6 +15,7 @@ natToFloat : Nat -> Float
 natToFloat = cast . cast . cast
 
 
+partial
 animate : Game c p -> Int -> IO ()
 animate game dt = do
   requestAnimationFrame $ animate (tick game)
@@ -32,6 +35,7 @@ createGame : Context2D -> Game 7 1
 createGame ctx = spawnAPlayer $ MkGame level1 [] ctx
 
 
+partial
 main : IO ()
 main = do
   onClickCanvas clickFunc

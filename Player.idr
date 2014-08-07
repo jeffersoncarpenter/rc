@@ -3,6 +3,7 @@ module Player
 import Physics
 
 %access public
+%default total
 
 data Player = MkPlayer PhysicsBody
 

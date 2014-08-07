@@ -7,6 +7,7 @@ import Map
 import Player
 
 %access public
+%default total
 
 
 -- in pixels

@@ -1,6 +1,7 @@
 module ExFloat
 
 %access public
+%default total
 
 -- Floats, extended with a point at infinity
 -- Chances are we'll need a point at negative infinity too

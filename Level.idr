@@ -3,6 +3,7 @@ module Level
 import Map
 
 %access public
+%default total
 
 level1 : Map 7
 level1 = MkMap [MkMapCell [0, 9],

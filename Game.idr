@@ -6,6 +6,7 @@ import Physics
 import Player
 
 %access public
+%default total
 
 
 data Game : Nat -> Nat -> Type where
