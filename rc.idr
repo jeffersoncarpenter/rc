@@ -6,6 +6,7 @@ import Game
 import Level
 import Map
 
+%access public
 %default total
 
 data FunctorVect : Type
