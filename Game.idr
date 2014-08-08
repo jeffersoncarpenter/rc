@@ -31,6 +31,10 @@ instance Lens (Vect (c + p) PhysicsBody) (Game c p) where
     MkGame (setL cPBs m) (zipWith setL pPBs ps) ctx
 
 
-tick : Game c p -> Game c p
-tick (MkGame m ps c) = MkGame m ps c
+move : PhysicsBody -> PhysicsBody
+move pb = record {
+  position = [| Prelude.Classes.(+) (position pb) [0.01, 0.01] |]
+  } pb
 
+tick : Game c p -> Game c p
+tick (MkGame m ps c) = MkGame m ((map . mapL) (map move) ps) c

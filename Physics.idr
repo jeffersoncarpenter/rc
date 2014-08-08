@@ -29,14 +29,6 @@ record PhysicsBody : Type where
                   PhysicsBody
 
 
-class AsPhysicsBodies o (n : Nat) where
-  asPhysicsBodies : o -> (Vect n PhysicsBody -> Vect n PhysicsBody) -> o
-
-
-instance (Lens (Vect n PhysicsBody) o) => AsPhysicsBodies o n where
-  asPhysicsBodies obj f = (mapL f) obj
-
-
 -- overlap : PhysicsBody -> PhysicsBody -> Float
 -- overlap p1 p2 = (radius p1) + (radius p2) -
 --                 distance (position p1) (position p2)
@@ -48,6 +40,9 @@ tick pb = record {
   angle = angle pb + angularVelocity pb
   } pb
 
+
+gravityAccel : Vect 2 Float
+gravityAccel = [0, 0.01]
 
 -- applyGravity : PhysicsBody -> PhysicsBody
 -- applyGravity pb = setVelocity
