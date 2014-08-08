@@ -20,7 +20,8 @@ instance Lens (Vect 1 PhysicsBody)  MapCell where
                                     (ConvexPoly [[-0.5, -0.5],
                                                  [-0.5, 0.5],
                                                  [0.5, 0.5],
-                                                 [0.5, -0.5]])]
+                                                 [0.5, -0.5]])
+                                    False]
   setL _ c = c
 
 
@@ -29,24 +30,6 @@ data Map : Nat -> Type where
   MkMap : (Vect cells MapCell) ->
           (Vect (S n) (Vect 2 Float)) -> -- spawn points
           Map cells
-
-
-mapCellToPhysicsBody : MapCell -> PhysicsBody
-mapCellToPhysicsBody (MkMapCell pos) = MkPhysicsBody
-                                          pos
-                                          [0, 0]
-                                          Infinity
-                                          0
-                                          0
-                                          Infinity
-                                          0
-                                          [0, 0]
-                                          (ConvexPoly [[-0.5, -0.5],
-                                                       [-0.5, 0.5],
-                                                       [0.5, 0.5],
-                                                       [0.5, -0.5]])
-
-
 
 
 instance Lens (Vect n PhysicsBody) (Map n) where

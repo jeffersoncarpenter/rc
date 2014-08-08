@@ -26,7 +26,19 @@ record PhysicsBody : Type where
                   -- radius is for collisions
                   -- will be replaced with a convex poly or something
                   (collisionObject : CollisionObject) ->
+                  (feelsGravity    : Bool) ->
                   PhysicsBody
+
+
+-- PhysicsBody derived properties
+  
+gravity : PhysicsBody -> Vect 2 Float
+gravity pb = if feelsGravity pb
+                  then [0, 0.01]
+                  else pure 0
+
+-- electricField : PhysicsBody -> Vect 2 Float -> Vect 2 Float
+-- magneticField : PhysicsBody -> Vect 2 Float -> Vect 2 Float
 
 
 -- overlap : PhysicsBody -> PhysicsBody -> Float
@@ -34,15 +46,21 @@ record PhysicsBody : Type where
 --                 distance (position p1) (position p2)
 
 
-tick : PhysicsBody -> PhysicsBody
-tick pb = record {
+move : PhysicsBody -> PhysicsBody
+move pb = record {
   position = [| Classes.(+) (position pb) (velocity pb) |],
   angle = angle pb + angularVelocity pb
   } pb
 
+moveAll : Vect n PhysicsBody -> Vect n PhysicsBody
+moveAll = map move
 
-gravityAccel : Vect 2 Float
-gravityAccel = [0, 0.01]
 
--- applyGravity : PhysicsBody -> PhysicsBody
--- applyGravity pb = setVelocity
+applyGravity : PhysicsBody -> PhysicsBody
+applyGravity pb = record {
+  velocity = [| Classes.(+) (velocity pb) (gravity pb) |]
+  } pb
+
+
+runPhysics : Vect n PhysicsBody -> Vect n PhysicsBody
+runPhysics = moveAll . (map applyGravity)

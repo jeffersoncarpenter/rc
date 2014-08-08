@@ -1342,6 +1342,58 @@ var i$systemInfo = function(index) {
   }
   return "";
 }
+var _idris_Prelude_46_Vect_46__43__43_$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 7] = i$ret;
+  i$ret = new i$CON(1,[i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 7]],null,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris_Prelude_46_Vect_46__43__43_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 5;
+  switch(i$valstack[i$valstack_base + 3].tag){
+    case 1:
+      i$PROJECT(i$valstack[i$valstack_base + 3],5,2);
+      i$valstack[i$valstack_base + 7] = null;
+      i$valstack[i$valstack_base + 8] = null;
+      i$valstack[i$valstack_base + 9] = null;
+      i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 7];
+      i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 8];
+      i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 9];
+      i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 6];
+      i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 4];
+      myoldbase = i$valstack_base;
+      i$valstack_base = i$valstack_top;
+      i$valstack_top += 5;
+      i$CALL(_idris_Prelude_46_Vect_46__43__43_$0,[oldbase,myoldbase]);
+      i$CALL(_idris_Prelude_46_Vect_46__43__43_,[myoldbase]);
+      break;
+    case 0:
+      i$ret = i$valstack[i$valstack_base + 4];
+      i$valstack_top = i$valstack_base;
+      i$valstack_base = oldbase;
+      break;
+  };
+}
+var _idris_Prelude_46_Basics_46__46_$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 6] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 6];
+  i$SLIDE(2);
+  i$valstack_top = i$valstack_base + 2;
+  i$CALL(_idris__123_APPLY0_125_,[oldbase]);
+}
+var _idris_Prelude_46_Basics_46__46_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 5];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 2;
+  i$CALL(_idris_Prelude_46_Basics_46__46_$0,[oldbase,myoldbase]);
+  i$CALL(_idris__123_APPLY0_125_,[myoldbase]);
+}
 var _idris_Prelude_46_Applicative_46__60__36__62_$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 6] = i$ret;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 6];
@@ -1363,16 +1415,22 @@ var _idris_Prelude_46_Applicative_46__60__36__62_ = function(oldbase){
   i$CALL(_idris_Prelude_46_Applicative_46__60__36__62_$0,[oldbase,myoldbase]);
   i$CALL(_idris__123_APPLY0_125_,[myoldbase]);
 }
+var _idris_Force$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 3] = i$ret;
+  i$ret = i$valstack[i$valstack_base + 3];
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
 var _idris_Main_46_animate$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 6] = i$ret;
-  i$valstack[i$valstack_base + 7] = new i$CON(65699,[i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65699,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65712,null);
+  i$valstack[i$valstack_base + 7] = new i$CON(65700,[i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65700,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
 var _idris_Main_46_animate$0 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 8] = i$ret;
-  i$valstack[i$valstack_base + 6] = new i$CON(65696,[i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7],i$valstack[i$valstack_base + 8]],_idris__123_APPLY0_125_$65696,null);
+  i$valstack[i$valstack_base + 7] = i$ret;
+  i$valstack[i$valstack_base + 6] = new i$CON(65697,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65697,null);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 6];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
@@ -1382,15 +1440,13 @@ var _idris_Main_46_animate$0 = function(oldbase,myoldbase){
 }
 var _idris_Main_46_animate = function(oldbase){
   var myoldbase;
-  i$valstack_top += 6;
+  i$valstack_top += 4;
   i$valstack[i$valstack_base + 4] = null;
   i$valstack[i$valstack_base + 5] = null;
   i$valstack[i$valstack_base + 6] = null;
   i$valstack[i$valstack_base + 7] = null;
-  i$valstack[i$valstack_base + 8] = null;
-  i$valstack[i$valstack_base + 9] = null;
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 8];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 9];
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 7];
   i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 2];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
@@ -1406,6 +1462,83 @@ var _idris_Prelude_46_Basics_46_apply = function(oldbase){
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
   i$CALL(_idris__123_APPLY0_125_,[oldbase]);
+}
+var _idris_Physics_46_applyGravity$4 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 1] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base];
+  i$SLIDE(2);
+  i$valstack_top = i$valstack_base + 2;
+  i$CALL(_idris_Physics_46_PhysicsBody_46_set_95_velocity,[oldbase]);
+}
+var _idris_Physics_46_applyGravity$3 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 6] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 6];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 6;
+  i$CALL(_idris_Physics_46_applyGravity$4,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Applicative_46__64_Prelude_46_Applicative_46_Applicative_36_Vect_32_k_58__33__60__36__62__58_0,[myoldbase]);
+}
+var _idris_Physics_46_applyGravity$2 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 5] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 1;
+  i$CALL(_idris_Physics_46_applyGravity$3,[oldbase,myoldbase]);
+  i$CALL(_idris_Physics_46_gravity,[myoldbase]);
+}
+var _idris_Physics_46_applyGravity$1 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 10] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 7];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 8];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 9];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 10];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 6;
+  i$CALL(_idris_Physics_46_applyGravity$2,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Applicative_46__64_Prelude_46_Applicative_46_Applicative_36_Vect_32_k_58__33__60__36__62__58_0,[myoldbase]);
+}
+var _idris_Physics_46_applyGravity$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 9] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 1;
+  i$CALL(_idris_Physics_46_applyGravity$1,[oldbase,myoldbase]);
+  i$CALL(_idris_Physics_46_PhysicsBody_46_velocity,[myoldbase]);
+}
+var _idris_Physics_46_applyGravity = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 11;
+  i$valstack[i$valstack_base + 1] = null;
+  i$valstack[i$valstack_base + 2] = null;
+  i$valstack[i$valstack_base + 3] = null;
+  i$valstack[i$valstack_base + 4] = null;
+  i$valstack[i$valstack_base + 5] = null;
+  i$valstack[i$valstack_base + 6] = null;
+  i$valstack[i$valstack_base + 7] = null;
+  i$valstack[i$valstack_base + 8] = null;
+  i$valstack[i$valstack_base + 9] = null;
+  i$valstack[i$valstack_base + 10] = i$bigInt("2");
+  i$valstack[i$valstack_base + 11] = i$CON$65709;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 9];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 10];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 11];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 3;
+  i$CALL(_idris_Physics_46_applyGravity$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Vect_46_replicate,[myoldbase]);
 }
 var _idris_Canvas_46_Context2D_46_arc$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 7] = i$ret;
@@ -1454,9 +1587,49 @@ var _idris_Main_46_clickFunc = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
   i$valstack[i$valstack_base + 1] = "HELLO";
-  i$ret = new i$CON(65709,[i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65709,null);
+  i$ret = new i$CON(65719,[i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65719,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
+}
+var _idris_Prelude_46_Vect_46_concat$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 9] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 7];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 8];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 9];
+  i$SLIDE(5);
+  i$valstack_top = i$valstack_base + 5;
+  i$CALL(_idris_Prelude_46_Vect_46__43__43_,[oldbase]);
+}
+var _idris_Prelude_46_Vect_46_concat = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 8;
+  switch(i$valstack[i$valstack_base + 3].tag){
+    case 1:
+      i$PROJECT(i$valstack[i$valstack_base + 3],4,2);
+      i$valstack[i$valstack_base + 6] = null;
+      i$valstack[i$valstack_base + 7] = null;
+      i$valstack[i$valstack_base + 8] = null;
+      i$valstack[i$valstack_base + 9] = null;
+      i$valstack[i$valstack_base + 10] = null;
+      i$valstack[i$valstack_base + 11] = null;
+      i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 9];
+      i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 10];
+      i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 11];
+      i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 5];
+      myoldbase = i$valstack_base;
+      i$valstack_base = i$valstack_top;
+      i$valstack_top += 4;
+      i$CALL(_idris_Prelude_46_Vect_46_concat$0,[oldbase,myoldbase]);
+      i$CALL(_idris_Prelude_46_Vect_46_concat,[myoldbase]);
+      break;
+    case 0:
+      i$ret = i$CON$0;
+      i$valstack_top = i$valstack_base;
+      i$valstack_base = oldbase;
+      break;
+  };
 }
 var _idris_Canvas_46_Context2D_46_context2DPtr = function(oldbase){
   var myoldbase;
@@ -1494,7 +1667,7 @@ var _idris_Draw_46_drawGame = function(oldbase){
   i$valstack[i$valstack_base + 7] = null;
   i$valstack[i$valstack_base + 8] = new i$CON(65652,[i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65652,null);
   i$valstack[i$valstack_base + 9] = new i$CON(65667,[i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65667,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7],i$valstack[i$valstack_base + 8],i$valstack[i$valstack_base + 9]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7],i$valstack[i$valstack_base + 8],i$valstack[i$valstack_base + 9]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -1533,14 +1706,14 @@ var _idris_Draw_46_drawMapCell = function(oldbase){
   i$valstack[i$valstack_base + 7] = null;
   i$valstack[i$valstack_base + 8] = new i$CON(65652,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65652,null);
   i$valstack[i$valstack_base + 9] = new i$CON(65686,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65686,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7],i$valstack[i$valstack_base + 8],i$valstack[i$valstack_base + 9]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7],i$valstack[i$valstack_base + 8],i$valstack[i$valstack_base + 9]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
 var _idris_Draw_46_drawPlayer$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 4] = i$ret;
   i$valstack[i$valstack_base + 5] = new i$CON(65687,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65687,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -1572,6 +1745,37 @@ var _idris_Draw_46_drawPlayer = function(oldbase){
   i$CALL(_idris_Draw_46_drawPlayer$0,[oldbase,myoldbase]);
   i$CALL(_idris_Physics_46_PhysicsBody_46_position,[myoldbase]);
 }
+var _idris_Prelude_46_Vect_46_drop = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 5;
+  if (i$valstack[i$valstack_base + 2].equals(i$ZERO)) {
+    i$ret = i$valstack[i$valstack_base + 3];
+    i$valstack_top = i$valstack_base;
+    i$valstack_base = oldbase;
+  } else {
+    i$PROJECT(i$valstack[i$valstack_base + 3],4,2);
+    i$valstack[i$valstack_base + 6] = null;
+    i$valstack[i$valstack_base + 7] = null;
+    i$valstack[i$valstack_base + 8] = i$ONE;
+    i$valstack[i$valstack_base + 8] = i$valstack[i$valstack_base + 2].subtract(i$valstack[i$valstack_base + 8]);
+    ;
+    i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 6];
+    i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 7];
+    i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 8];
+    i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 5];
+    i$SLIDE(4);
+    i$valstack_top = i$valstack_base + 4;
+    i$CALL(_idris_Prelude_46_Vect_46_drop,[oldbase]);
+  };
+}
+var _idris_Physics_46_PhysicsBody_46_feelsGravity = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 3;
+  i$PROJECT(i$valstack[i$valstack_base],1,3);
+  i$ret = i$valstack[i$valstack_base + 3];
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
 var _idris_Canvas_46_Context2D_46_fillRect$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 6] = i$ret;
   i$ret = i$valstack[i$valstack_base + 6].fillRect(i$valstack[i$valstack_base + 1], i$valstack[i$valstack_base + 2], i$valstack[i$valstack_base + 3], i$valstack[i$valstack_base + 4]);
@@ -1595,7 +1799,7 @@ var _idris_Canvas_46_getContext2D = function(oldbase){
   i$valstack[i$valstack_base + 2] = null;
   i$valstack[i$valstack_base + 3] = new i$CON(65657,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65657,null);
   i$valstack[i$valstack_base + 4] = i$CON$65658;
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -1606,7 +1810,7 @@ var _idris_Canvas_46_getElementById = function(oldbase){
   i$valstack[i$valstack_base + 2] = null;
   i$valstack[i$valstack_base + 3] = new i$CON(65659,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65659,null);
   i$valstack[i$valstack_base + 4] = i$CON$65660;
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -1618,6 +1822,41 @@ var _idris_Lens_46_getL = function(oldbase){
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
+var _idris_Physics_46_gravity$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 1] = i$ret;
+  switch(i$valstack[i$valstack_base + 1].tag){
+    case 0:
+      i$valstack[i$valstack_base + 2] = null;
+      i$valstack[i$valstack_base + 3] = i$bigInt("2");
+      i$valstack[i$valstack_base + 4] = 0.0;
+      i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+      i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
+      i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 4];
+      i$SLIDE(3);
+      i$valstack_top = i$valstack_base + 3;
+      i$CALL(_idris_Prelude_46_Vect_46_replicate,[oldbase]);
+      break;
+    case 1:
+      i$valstack[i$valstack_base + 2] = 0.0;
+      i$valstack[i$valstack_base + 3] = 1.0e-2;
+      i$valstack[i$valstack_base + 4] = i$CON$0;
+      i$valstack[i$valstack_base + 3] = new i$CON(1,[i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],null,null);
+      i$ret = new i$CON(1,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3]],null,null);
+      i$valstack_top = i$valstack_base;
+      i$valstack_base = oldbase;
+      break;
+  };
+}
+var _idris_Physics_46_gravity = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 4;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 1;
+  i$CALL(_idris_Physics_46_gravity$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Physics_46_PhysicsBody_46_feelsGravity,[myoldbase]);
+}
 var _idris_Prelude_46_Vect_46_head = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
@@ -1628,7 +1867,7 @@ var _idris_Prelude_46_Vect_46_head = function(oldbase){
 }
 var _idris_io_95_bind$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 7] = i$ret;
-  i$valstack[i$valstack_base + 8] = new i$CON(65714,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 3]],_idris__123_APPLY0_125_$65714,null);
+  i$valstack[i$valstack_base + 8] = new i$CON(65724,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 3]],_idris__123_APPLY0_125_$65724,null);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 5];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 6];
   i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 7];
@@ -1735,10 +1974,10 @@ var _idris_Main_46_main = function(oldbase){
   i$valstack_top += 4;
   i$valstack[i$valstack_base] = null;
   i$valstack[i$valstack_base + 1] = null;
-  i$valstack[i$valstack_base + 2] = i$CON$65697;
-  i$valstack[i$valstack_base + 2] = new i$CON(65698,[i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65698,null);
-  i$valstack[i$valstack_base + 3] = i$CON$65703;
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3]],_idris__123_APPLY0_125_$65712,null);
+  i$valstack[i$valstack_base + 2] = i$CON$65698;
+  i$valstack[i$valstack_base + 2] = new i$CON(65699,[i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65699,null);
+  i$valstack[i$valstack_base + 3] = i$CON$65704;
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -1763,9 +2002,8 @@ var _idris_Prelude_46_Functor_46_map = function(oldbase){
 }
 var _idris_Lens_46_mapL$4 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 5] = i$ret;
-  i$valstack[i$valstack_base + 6] = null;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 5];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 4];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
   i$CALL(_idris__123_APPLY0_125_,[oldbase]);
@@ -1829,65 +2067,84 @@ var _idris_Lens_46_mapL = function(oldbase){
 }
 var _idris_Player_46_mkPlayer = function(oldbase){
   var myoldbase;
-  i$valstack_top += 1;
-  i$ret = i$valstack[i$valstack_base];
+  i$valstack_top += 3;
+  i$valstack[i$valstack_base + 1] = 0.0;
+  i$valstack[i$valstack_base + 2] = 0.0;
+  i$valstack[i$valstack_base + 3] = i$CON$0;
+  i$valstack[i$valstack_base + 2] = new i$CON(1,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3]],null,null);
+  i$valstack[i$valstack_base + 1] = new i$CON(1,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],null,null);
+  i$valstack[i$valstack_base + 2] = i$CON$1;
+  i$ret = new i$CON(0,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],null,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
-var _idris_Game_46_move$3 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 1] = i$ret;
-  i$valstack[i$valstack_base + 2] = null;
+var _idris_Physics_46_move$5 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 2] = i$ret;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Physics_46_PhysicsBody_46_set_95_position,[oldbase]);
+  i$CALL(_idris_Physics_46_PhysicsBody_46_set_95_angle,[oldbase]);
 }
-var _idris_Game_46_move$2 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 5] = i$ret;
-  i$valstack[i$valstack_base + 6] = 1.0e-2;
-  i$valstack[i$valstack_base + 7] = 1.0e-2;
-  i$valstack[i$valstack_base + 8] = i$CON$0;
-  i$valstack[i$valstack_base + 7] = new i$CON(1,[i$valstack[i$valstack_base + 7],i$valstack[i$valstack_base + 8]],null,null);
-  i$valstack[i$valstack_base + 6] = new i$CON(1,[i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],null,null);
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
-  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 3];
-  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 4];
-  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 5];
-  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 6];
+var _idris_Physics_46_move$4 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 2] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 2;
+  i$CALL(_idris_Physics_46_move$5,[oldbase,myoldbase]);
+  i$CALL(_idris_Physics_46_PhysicsBody_46_set_95_position,[myoldbase]);
+}
+var _idris_Physics_46_move$3 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 7] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 7];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 6;
-  i$CALL(_idris_Game_46_move$3,[oldbase,myoldbase]);
+  i$CALL(_idris_Physics_46_move$4,[oldbase,myoldbase]);
   i$CALL(_idris_Prelude_46_Applicative_46__64_Prelude_46_Applicative_46_Applicative_36_Vect_32_k_58__33__60__36__62__58_0,[myoldbase]);
 }
-var _idris_Game_46_move$1 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 10] = i$ret;
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 5];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 6];
-  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 7];
-  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 8];
-  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 9];
-  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 10];
-  myoldbase = i$valstack_base;
-  i$valstack_base = i$valstack_top;
-  i$valstack_top += 6;
-  i$CALL(_idris_Game_46_move$2,[oldbase,myoldbase]);
-  i$CALL(_idris_Prelude_46_Applicative_46__64_Prelude_46_Applicative_46_Applicative_36_Vect_32_k_58__33__60__36__62__58_0,[myoldbase]);
-}
-var _idris_Game_46_move$0 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 9] = i$ret;
+var _idris_Physics_46_move$2 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 6] = i$ret;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 1;
-  i$CALL(_idris_Game_46_move$1,[oldbase,myoldbase]);
+  i$CALL(_idris_Physics_46_move$3,[oldbase,myoldbase]);
+  i$CALL(_idris_Physics_46_PhysicsBody_46_velocity,[myoldbase]);
+}
+var _idris_Physics_46_move$1 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 11] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 7];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 8];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 9];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 10];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 11];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 6;
+  i$CALL(_idris_Physics_46_move$2,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Applicative_46__64_Prelude_46_Applicative_46_Applicative_36_Vect_32_k_58__33__60__36__62__58_0,[myoldbase]);
+}
+var _idris_Physics_46_move$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 10] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 1;
+  i$CALL(_idris_Physics_46_move$1,[oldbase,myoldbase]);
   i$CALL(_idris_Physics_46_PhysicsBody_46_position,[myoldbase]);
 }
-var _idris_Game_46_move = function(oldbase){
+var _idris_Physics_46_move = function(oldbase){
   var myoldbase;
-  i$valstack_top += 11;
+  i$valstack_top += 12;
   i$valstack[i$valstack_base + 1] = null;
   i$valstack[i$valstack_base + 2] = null;
   i$valstack[i$valstack_base + 3] = null;
@@ -1897,16 +2154,35 @@ var _idris_Game_46_move = function(oldbase){
   i$valstack[i$valstack_base + 7] = null;
   i$valstack[i$valstack_base + 8] = null;
   i$valstack[i$valstack_base + 9] = null;
-  i$valstack[i$valstack_base + 10] = i$bigInt("2");
-  i$valstack[i$valstack_base + 11] = i$CON$65690;
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 9];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 10];
-  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 11];
+  i$valstack[i$valstack_base + 10] = null;
+  i$valstack[i$valstack_base + 11] = i$bigInt("2");
+  i$valstack[i$valstack_base + 12] = i$CON$65711;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 10];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 11];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 12];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
   i$valstack_top += 3;
-  i$CALL(_idris_Game_46_move$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Physics_46_move$0,[oldbase,myoldbase]);
   i$CALL(_idris_Prelude_46_Vect_46_replicate,[myoldbase]);
+}
+var _idris_Physics_46_moveAll = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 5;
+  i$valstack[i$valstack_base + 2] = null;
+  i$valstack[i$valstack_base + 3] = null;
+  i$valstack[i$valstack_base + 4] = null;
+  i$valstack[i$valstack_base + 5] = null;
+  i$valstack[i$valstack_base + 6] = i$CON$65706;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 1];
+  i$SLIDE(6);
+  i$valstack_top = i$valstack_base + 6;
+  i$CALL(_idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_58__33_map_58_0,[oldbase]);
 }
 var _idris_Main_46_onClickCanvas = function(oldbase){
   var myoldbase;
@@ -1918,7 +2194,8 @@ var _idris_Main_46_onClickCanvas = function(oldbase){
 var _idris_Physics_46_PhysicsBody_46_position = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
-  i$ret = i$valstack[i$valstack_base];
+  i$PROJECT(i$valstack[i$valstack_base],1,3);
+  i$ret = i$valstack[i$valstack_base + 1];
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -1983,7 +2260,7 @@ var _idris_Canvas_46_requestAnimationFrame = function(oldbase){
   i$valstack[i$valstack_base + 2] = null;
   i$valstack[i$valstack_base + 3] = new i$CON(65661,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65661,null);
   i$valstack[i$valstack_base + 4] = i$CON$65662;
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -2002,6 +2279,19 @@ var _idris_Canvas_46_Context2D_46_restore = function(oldbase){
   i$valstack_top += 1;
   i$CALL(_idris_Canvas_46_Context2D_46_restore$0,[oldbase,myoldbase]);
   i$CALL(_idris_Canvas_46_Context2D_46_context2DPtr,[myoldbase]);
+}
+var _idris_Physics_46_runPhysics = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 5;
+  i$valstack[i$valstack_base + 1] = null;
+  i$valstack[i$valstack_base + 2] = null;
+  i$valstack[i$valstack_base + 3] = null;
+  i$valstack[i$valstack_base + 4] = null;
+  i$valstack[i$valstack_base + 4] = new i$CON(65707,[i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65707,null);
+  i$valstack[i$valstack_base + 5] = i$CON$65712;
+  i$ret = new i$CON(65715,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65715,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
 }
 var _idris_run_95__95_IO = function(oldbase){
   var myoldbase;
@@ -2053,10 +2343,27 @@ var _idris_Lens_46_setL = function(oldbase){
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
+var _idris_Physics_46_PhysicsBody_46_set_95_angle = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 3;
+  i$PROJECT(i$valstack[i$valstack_base + 1],2,3);
+  i$ret = new i$CON(0,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],null,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
 var _idris_Physics_46_PhysicsBody_46_set_95_position = function(oldbase){
   var myoldbase;
-  i$valstack_top += 1;
-  i$ret = i$valstack[i$valstack_base];
+  i$valstack_top += 3;
+  i$PROJECT(i$valstack[i$valstack_base + 1],2,3);
+  i$ret = new i$CON(0,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],null,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris_Physics_46_PhysicsBody_46_set_95_velocity = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 3;
+  i$PROJECT(i$valstack[i$valstack_base + 1],2,3);
+  i$ret = new i$CON(0,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base],i$valstack[i$valstack_base + 4]],null,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -2128,37 +2435,30 @@ var _idris_Canvas_46_Context2D_46_strokeRect = function(oldbase){
 }
 var _idris_Game_46_tick$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 6] = i$ret;
-  i$ret = new i$CON(0,[i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 5]],null,null);
-  i$valstack_top = i$valstack_base;
-  i$valstack_base = oldbase;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 2];
+  i$SLIDE(5);
+  i$valstack_top = i$valstack_base + 5;
+  i$CALL(_idris_Lens_46_mapL,[oldbase]);
 }
 var _idris_Game_46_tick = function(oldbase){
   var myoldbase;
-  i$valstack_top += 11;
-  i$PROJECT(i$valstack[i$valstack_base + 2],3,3);
+  i$valstack_top += 4;
+  i$valstack[i$valstack_base + 3] = null;
+  i$valstack[i$valstack_base + 4] = null;
+  i$valstack[i$valstack_base + 5] = i$CON$65688;
+  i$valstack[i$valstack_base + 6] = new i$CON(65690,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65690,null);
+  i$valstack[i$valstack_base + 5] = new i$CON(0,[i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6]],null,null);
   i$valstack[i$valstack_base + 6] = null;
-  i$valstack[i$valstack_base + 7] = null;
-  i$valstack[i$valstack_base + 8] = null;
-  i$valstack[i$valstack_base + 9] = null;
-  i$valstack[i$valstack_base + 10] = null;
-  i$valstack[i$valstack_base + 11] = null;
-  i$valstack[i$valstack_base + 12] = i$CON$65691;
-  i$valstack[i$valstack_base + 13] = i$CON$65693;
-  i$valstack[i$valstack_base + 12] = new i$CON(0,[i$valstack[i$valstack_base + 12],i$valstack[i$valstack_base + 13]],null,null);
-  i$valstack[i$valstack_base + 13] = i$CON$65694;
-  i$valstack[i$valstack_base + 10] = new i$CON(65695,[i$valstack[i$valstack_base + 10],i$valstack[i$valstack_base + 11],i$valstack[i$valstack_base + 12],i$valstack[i$valstack_base + 13]],_idris__123_APPLY0_125_$65695,null);
-  ;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 6];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 7];
-  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 8];
-  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 9];
-  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 10];
-  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 4];
   myoldbase = i$valstack_base;
   i$valstack_base = i$valstack_top;
-  i$valstack_top += 6;
+  i$valstack_top += 1;
   i$CALL(_idris_Game_46_tick$0,[oldbase,myoldbase]);
-  i$CALL(_idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_58__33_map_58_0,[myoldbase]);
+  i$CALL(_idris_Physics_46_runPhysics,[myoldbase]);
 }
 var _idris_Canvas_46_Context2D_46_translate$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 4] = i$ret;
@@ -2214,6 +2514,14 @@ var _idris_Prelude_46_Traversable_46_traverse = function(oldbase){
   i$valstack_top += 2;
   i$CALL(_idris_Prelude_46_Traversable_46_traverse$0,[oldbase,myoldbase]);
   i$CALL(_idris__123_APPLY0_125_,[myoldbase]);
+}
+var _idris_Physics_46_PhysicsBody_46_velocity = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 2;
+  i$PROJECT(i$valstack[i$valstack_base],1,3);
+  i$ret = i$valstack[i$valstack_base + 2];
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
 }
 var _idris_Prelude_46_Vect_46_zipWith$2 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 12] = i$ret;
@@ -2612,27 +2920,30 @@ var _idris__123_APPLY0_125_$65688 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Game_46_move,[oldbase]);
+  i$CALL(_idris_Game_46__123_tick0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65689 = function(oldbase,myoldbase){
+  i$PROJECT(i$valstack[i$valstack_base],2,2);
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 1];
+  i$SLIDE(3);
+  i$valstack_top = i$valstack_base + 3;
+  i$CALL(_idris_Game_46__123_tick1_125_,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65690 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Game_46__123_move0_125_,[oldbase]);
-}
-var _idris__123_APPLY0_125_$65690 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
-  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
-  i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Game_46__123_move1_125_,[oldbase]);
+  i$CALL(_idris_Game_46__123_tick2_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65691 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Game_46__123_tick0_125_,[oldbase]);
+  i$CALL(_idris_Lens_46__123_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_44__32_Game_32_c_32_p_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_getL0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65692 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
@@ -2640,32 +2951,33 @@ var _idris__123_APPLY0_125_$65692 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Game_46__123_tick1_125_,[oldbase]);
+  i$CALL(_idris_Lens_46__123_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_44__32_Game_32_c_32_p_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_setL0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65693 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Game_46__123_tick2_125_,[oldbase]);
+  i$CALL(_idris_Lens_46__123_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_44__32_Game_32_c_32_p_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_setL1_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65694 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Game_46__123_tick3_125_,[oldbase]);
+  i$CALL(_idris_Lens_46__123_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_44__32_Game_32_c_32_p_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_setL2_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65695 = function(oldbase,myoldbase){
-  i$PROJECT(i$valstack[i$valstack_base],2,4);
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
-  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 4];
-  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 5];
-  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 1];
-  i$SLIDE(5);
-  i$valstack_top = i$valstack_base + 5;
-  i$CALL(_idris_Lens_46_mapL,[oldbase]);
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Lens_46__123_Vect_32_n_32_PhysicsBody_44__32_Map_32_n_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_getL0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65696 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Lens_46__123_Vect_32_n_32_PhysicsBody_44__32_Map_32_n_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_getL1_125_,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65697 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,3);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
@@ -2675,19 +2987,11 @@ var _idris__123_APPLY0_125_$65696 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 4;
   i$CALL(_idris_Main_46_animate,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65697 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65698 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
   i$CALL(_idris_Main_46_clickFunc,[oldbase]);
-}
-var _idris__123_APPLY0_125_$65698 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
-  i$SLIDE(2);
-  i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Main_46_onClickCanvas,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65699 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
@@ -2695,33 +2999,95 @@ var _idris__123_APPLY0_125_$65699 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
   i$SLIDE(2);
   i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Main_46__123_animate0_125_,[oldbase]);
+  i$CALL(_idris_Main_46_onClickCanvas,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65700 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
-  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
-  i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Main_46__123_main0_125_,[oldbase]);
+  i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
+  i$SLIDE(2);
+  i$valstack_top = i$valstack_base + 2;
+  i$CALL(_idris_Main_46__123_animate0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65701 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Main_46__123_main1_125_,[oldbase]);
+  i$CALL(_idris_Main_46__123_main0_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65702 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Main_46__123_main2_125_,[oldbase]);
+  i$CALL(_idris_Main_46__123_main1_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65703 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Main_46__123_main3_125_,[oldbase]);
+  i$CALL(_idris_Main_46__123_main2_125_,[oldbase]);
 }
 var _idris__123_APPLY0_125_$65704 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Main_46__123_main3_125_,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65705 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Physics_46_applyGravity,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65706 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Physics_46_move,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65707 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
+  i$SLIDE(2);
+  i$valstack_top = i$valstack_base + 2;
+  i$CALL(_idris_Physics_46_moveAll,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65708 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
+  i$SLIDE(2);
+  i$valstack_top = i$valstack_base + 2;
+  i$CALL(_idris_Physics_46__123_applyGravity0_125_,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65709 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Physics_46__123_applyGravity1_125_,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65710 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
+  i$SLIDE(2);
+  i$valstack_top = i$valstack_base + 2;
+  i$CALL(_idris_Physics_46__123_move0_125_,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65711 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Physics_46__123_move1_125_,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65712 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Physics_46__123_runPhysics0_125_,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65713 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
@@ -2729,7 +3095,7 @@ var _idris__123_APPLY0_125_$65704 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 2;
   i$CALL(_idris_Prelude_46_Applicative_46__123_IO_32_instance_32_of_32_Prelude_46_Applicative_46_Applicative_44__32_method_32__60__36__62_0_125_,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65705 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65714 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
@@ -2737,7 +3103,19 @@ var _idris__123_APPLY0_125_$65705 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 2;
   i$CALL(_idris_Prelude_46_Applicative_46__123_IO_32_instance_32_of_32_Prelude_46_Applicative_46_Applicative_44__32_method_32__60__36__62_1_125_,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65706 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65715 = function(oldbase,myoldbase){
+  i$PROJECT(i$valstack[i$valstack_base],2,5);
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 1];
+  i$SLIDE(6);
+  i$valstack_top = i$valstack_base + 6;
+  i$CALL(_idris_Prelude_46_Basics_46__46_,[oldbase]);
+}
+var _idris__123_APPLY0_125_$65716 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,3);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
@@ -2747,7 +3125,7 @@ var _idris__123_APPLY0_125_$65706 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 4;
   i$CALL(_idris_Prelude_46_Basics_46_apply,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65707 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65717 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
@@ -2755,13 +3133,13 @@ var _idris__123_APPLY0_125_$65707 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 2;
   i$CALL(_idris_Prelude_46_Traversable_46__123_Vect_32_n_32_instance_32_of_32_Prelude_46_Traversable_46_Traversable_44__32_method_32_traverse0_125_,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65708 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65718 = function(oldbase,myoldbase){
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
   i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
   i$valstack_top = i$valstack_base + 1;
   i$CALL(_idris_Prelude_46_Traversable_46__123_Vect_32_n_32_instance_32_of_32_Prelude_46_Traversable_46_Traversable_44__32_method_32_traverse1_125_,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65709 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65719 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 1];
@@ -2769,7 +3147,7 @@ var _idris__123_APPLY0_125_$65709 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 2;
   i$CALL(_idris_Prelude_46_putStr,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65710 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65720 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,4);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
@@ -2780,7 +3158,7 @@ var _idris__123_APPLY0_125_$65710 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 5;
   i$CALL(_idris__64_Prelude_46_Functor_46_Functor_36_Vect_32_n,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65711 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65721 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,6);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
@@ -2793,7 +3171,7 @@ var _idris__123_APPLY0_125_$65711 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 7;
   i$CALL(_idris__64_Prelude_46_Traversable_46_Traversable_36_Vect_32_n,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65712 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65722 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,4);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
@@ -2804,7 +3182,7 @@ var _idris__123_APPLY0_125_$65712 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 5;
   i$CALL(_idris_io_95_bind,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65713 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65723 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,2);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
@@ -2813,7 +3191,7 @@ var _idris__123_APPLY0_125_$65713 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 3;
   i$CALL(_idris_io_95_return,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65714 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65724 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,2);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 2];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
@@ -2822,57 +3200,57 @@ var _idris__123_APPLY0_125_$65714 = function(oldbase,myoldbase){
   i$valstack_top = i$valstack_base + 3;
   i$CALL(_idris__123_io_95_bind0_125_,[oldbase]);
 }
-var _idris__123_APPLY0_125_$65715 = function(oldbase,myoldbase){
-  i$PROJECT(i$valstack[i$valstack_base],2,2);
-  i$ret = new i$CON(65706,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65706,null);
-  i$valstack_top = i$valstack_base;
-  i$valstack_base = oldbase;
-}
-var _idris__123_APPLY0_125_$65716 = function(oldbase,myoldbase){
-  i$PROJECT(i$valstack[i$valstack_base],2,3);
-  i$ret = new i$CON(65710,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65710,null);
-  i$valstack_top = i$valstack_base;
-  i$valstack_base = oldbase;
-}
-var _idris__123_APPLY0_125_$65717 = function(oldbase,myoldbase){
-  i$PROJECT(i$valstack[i$valstack_base],2,5);
-  i$ret = new i$CON(65711,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65711,null);
-  i$valstack_top = i$valstack_base;
-  i$valstack_base = oldbase;
-}
-var _idris__123_APPLY0_125_$65718 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65725 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,2);
   i$ret = new i$CON(65716,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65716,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
-var _idris__123_APPLY0_125_$65719 = function(oldbase,myoldbase){
-  i$PROJECT(i$valstack[i$valstack_base],2,4);
-  i$ret = new i$CON(65717,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65717,null);
-  i$valstack_top = i$valstack_base;
-  i$valstack_base = oldbase;
-}
-var _idris__123_APPLY0_125_$65720 = function(oldbase,myoldbase){
-  i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
-  i$ret = new i$CON(65718,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65718,null);
-  i$valstack_top = i$valstack_base;
-  i$valstack_base = oldbase;
-}
-var _idris__123_APPLY0_125_$65721 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65726 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,3);
-  i$ret = new i$CON(65719,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65719,null);
+  i$ret = new i$CON(65720,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65720,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
-var _idris__123_APPLY0_125_$65722 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65727 = function(oldbase,myoldbase){
+  i$PROJECT(i$valstack[i$valstack_base],2,5);
+  i$ret = new i$CON(65721,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65721,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris__123_APPLY0_125_$65728 = function(oldbase,myoldbase){
   i$PROJECT(i$valstack[i$valstack_base],2,2);
-  i$ret = new i$CON(65721,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65721,null);
+  i$ret = new i$CON(65726,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65726,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
-var _idris__123_APPLY0_125_$65723 = function(oldbase,myoldbase){
+var _idris__123_APPLY0_125_$65729 = function(oldbase,myoldbase){
+  i$PROJECT(i$valstack[i$valstack_base],2,4);
+  i$ret = new i$CON(65727,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65727,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris__123_APPLY0_125_$65730 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
-  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65722,null);
+  i$ret = new i$CON(65728,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65728,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris__123_APPLY0_125_$65731 = function(oldbase,myoldbase){
+  i$PROJECT(i$valstack[i$valstack_base],2,3);
+  i$ret = new i$CON(65729,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65729,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris__123_APPLY0_125_$65732 = function(oldbase,myoldbase){
+  i$PROJECT(i$valstack[i$valstack_base],2,2);
+  i$ret = new i$CON(65731,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65731,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris__123_APPLY0_125_$65733 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 2] = i$valstack[i$valstack_base].args[0];
+  i$ret = new i$CON(65732,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65732,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -2900,7 +3278,7 @@ var _idris__123_EVAL0_125_ = function(oldbase){
 }
 var _idris_Prelude_46_Applicative_46__123_IO_32_instance_32_of_32_Prelude_46_Applicative_46_Applicative_44__32_method_32__60__36__62_0_125_$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 3] = i$ret;
-  i$ret = new i$CON(65713,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3]],_idris__123_APPLY0_125_$65713,null);
+  i$ret = new i$CON(65723,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3]],_idris__123_APPLY0_125_$65723,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -2915,6 +3293,48 @@ var _idris_Prelude_46_Applicative_46__123_IO_32_instance_32_of_32_Prelude_46_App
   i$valstack_top += 2;
   i$CALL(_idris_Prelude_46_Applicative_46__123_IO_32_instance_32_of_32_Prelude_46_Applicative_46_Applicative_44__32_method_32__60__36__62_0_125_$0,[oldbase,myoldbase]);
   i$CALL(_idris__123_APPLY0_125_,[myoldbase]);
+}
+var _idris_Lens_46__123_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_44__32_Game_32_c_32_p_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_getL0_125_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40__124_fromInteger_32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32__124__41__32_PhysicsBody_58_Player_58__33_getL_58_0,[oldbase]);
+}
+var _idris_Lens_46__123_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_44__32_Game_32_c_32_p_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_setL0_125_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  i$valstack[i$valstack_base + 2] = null;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
+  i$SLIDE(2);
+  i$valstack_top = i$valstack_base + 2;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40__124_fromInteger_32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32__124__41__32_PhysicsBody_58_Player_58__33_setL_58_0,[oldbase]);
+}
+var _idris_Lens_46__123_Vect_32_n_32_PhysicsBody_44__32_Map_32_n_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_getL0_125_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 8;
+  i$valstack[i$valstack_base + 1] = null;
+  i$valstack[i$valstack_base + 2] = null;
+  i$valstack[i$valstack_base + 3] = null;
+  i$valstack[i$valstack_base + 4] = null;
+  i$valstack[i$valstack_base + 5] = null;
+  i$valstack[i$valstack_base + 6] = null;
+  i$valstack[i$valstack_base + 7] = null;
+  i$valstack[i$valstack_base + 8] = null;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 6] = i$valstack[i$valstack_base];
+  i$valstack[i$valstack_top + 7] = i$valstack[i$valstack_base + 7];
+  i$valstack[i$valstack_top + 8] = i$valstack[i$valstack_base + 8];
+  i$SLIDE(9);
+  i$valstack_top = i$valstack_base + 9;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32_n_32_PhysicsBody_58_Map_32_n_58__33_getL_58_0_95_case,[oldbase]);
 }
 var _idris_Prelude_46_Traversable_46__123_Vect_32_n_32_instance_32_of_32_Prelude_46_Traversable_46_Traversable_44__32_method_32_traverse0_125_ = function(oldbase){
   var myoldbase;
@@ -2935,11 +3355,18 @@ var _idris_Main_46__123_animate0_125_ = function(oldbase){
   i$valstack_top = i$valstack_base + 3;
   i$CALL(_idris_Draw_46_drawGame,[oldbase]);
 }
+var _idris_Physics_46__123_applyGravity0_125_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  i$ret = i$valstack[i$valstack_base] + i$valstack[i$valstack_base + 1];
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
 var _idris_Draw_46__123_drawGame0_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
   i$valstack[i$valstack_base + 1] = null;
-  i$ret = new i$CON(65713,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65713,null);
+  i$ret = new i$CON(65723,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65723,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -2947,7 +3374,7 @@ var _idris_Draw_46__123_drawMap0_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
   i$valstack[i$valstack_base + 1] = null;
-  i$ret = new i$CON(65713,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65713,null);
+  i$ret = new i$CON(65723,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65723,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3013,11 +3440,11 @@ var _idris_Main_46__123_main0_125_ = function(oldbase){
   i$valstack_top += 2;
   i$valstack[i$valstack_base + 1] = null;
   i$valstack[i$valstack_base + 2] = i$CON$0;
-  i$ret = new i$CON(65713,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65713,null);
+  i$ret = new i$CON(65723,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65723,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
-var _idris_Game_46__123_move0_125_ = function(oldbase){
+var _idris_Physics_46__123_move0_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
   i$ret = i$valstack[i$valstack_base] + i$valstack[i$valstack_base + 1];
@@ -3055,28 +3482,72 @@ var _idris__123_runMain0_125_ = function(oldbase){
   i$CALL(_idris__123_runMain0_125_$0,[oldbase,myoldbase]);
   i$CALL(_idris_Main_46_main,[myoldbase]);
 }
+var _idris_Physics_46__123_runPhysics0_125_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 5;
+  i$valstack[i$valstack_base + 1] = null;
+  i$valstack[i$valstack_base + 2] = null;
+  i$valstack[i$valstack_base + 3] = null;
+  i$valstack[i$valstack_base + 4] = null;
+  i$valstack[i$valstack_base + 5] = i$CON$65705;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 4];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base];
+  i$SLIDE(6);
+  i$valstack_top = i$valstack_base + 6;
+  i$CALL(_idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_58__33_map_58_0,[oldbase]);
+}
 var _idris_Game_46__123_tick0_125_ = function(oldbase){
   var myoldbase;
-  i$valstack_top += 1;
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
-  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
-  i$valstack_top = i$valstack_base + 1;
-  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40__124_fromInteger_32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32__124__41__32_PhysicsBody_58_Player_58__33_getL_58_0,[oldbase]);
+  i$valstack_top += 2;
+  i$valstack[i$valstack_base + 1] = null;
+  i$valstack[i$valstack_base + 2] = null;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base];
+  i$SLIDE(3);
+  i$valstack_top = i$valstack_base + 3;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_getL_58_0,[oldbase]);
 }
 var _idris_Prelude_46_Applicative_46__123_IO_32_instance_32_of_32_Prelude_46_Applicative_46_Applicative_44__32_method_32__60__36__62_1_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 3;
   i$valstack[i$valstack_base + 2] = null;
   i$valstack[i$valstack_base + 3] = null;
-  i$valstack[i$valstack_base + 4] = new i$CON(65704,[i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65704,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65712,null);
+  i$valstack[i$valstack_base + 4] = new i$CON(65713,[i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65713,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
+}
+var _idris_Lens_46__123_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_44__32_Game_32_c_32_p_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_setL1_125_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  i$ret = new i$CON(65692,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65692,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris_Lens_46__123_Vect_32_n_32_PhysicsBody_44__32_Map_32_n_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_getL1_125_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
+  i$valstack[i$valstack_base] = i$valstack[i$valstack_top];
+  i$valstack_top = i$valstack_base + 1;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40__124_fromInteger_32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32__124__41__32_PhysicsBody_58_MapCell_58__33_getL_58_0,[oldbase]);
 }
 var _idris_Prelude_46_Traversable_46__123_Vect_32_n_32_instance_32_of_32_Prelude_46_Traversable_46_Traversable_44__32_method_32_traverse1_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
-  i$ret = new i$CON(65707,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65707,null);
+  i$ret = new i$CON(65717,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65717,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris_Physics_46__123_applyGravity1_125_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  i$ret = new i$CON(65708,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65708,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3105,7 +3576,7 @@ var _idris_Draw_46__123_drawMapCell1_125_ = function(oldbase){
   i$valstack[i$valstack_base + 7] = 1.0;
   i$valstack[i$valstack_base + 4] = new i$CON(65649,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65649,null);
   i$valstack[i$valstack_base + 5] = new i$CON(65683,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65683,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3113,7 +3584,7 @@ var _idris_Canvas_46__123_getContext2D1_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
   i$valstack[i$valstack_base + 1] = null;
-  i$ret = new i$CON(65713,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65713,null);
+  i$ret = new i$CON(65723,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65723,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3121,14 +3592,14 @@ var _idris_Canvas_46__123_getElementById1_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
   i$valstack[i$valstack_base + 1] = null;
-  i$ret = new i$CON(65713,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65713,null);
+  i$ret = new i$CON(65723,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65723,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
 var _idris_Main_46__123_main1_125_$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 3] = i$ret;
-  i$valstack[i$valstack_base + 4] = i$CON$65700;
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65712,null);
+  i$valstack[i$valstack_base + 4] = i$CON$65701;
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3150,7 +3621,7 @@ var _idris_Main_46__123_main1_125_ = function(oldbase){
   i$valstack_top += 6;
   i$valstack[i$valstack_base + 1] = null;
   i$valstack[i$valstack_base + 2] = null;
-  i$valstack[i$valstack_base + 3] = null;
+  i$valstack[i$valstack_base + 3] = i$bigInt("7");
   i$valstack[i$valstack_base + 4] = null;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
   myoldbase = i$valstack_base;
@@ -3159,10 +3630,10 @@ var _idris_Main_46__123_main1_125_ = function(oldbase){
   i$CALL(_idris_Main_46__123_main1_125_$0,[oldbase,myoldbase]);
   i$CALL(_idris_Main_46_createGame,[myoldbase]);
 }
-var _idris_Game_46__123_move1_125_ = function(oldbase){
+var _idris_Physics_46__123_move1_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
-  i$ret = new i$CON(65689,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65689,null);
+  i$ret = new i$CON(65710,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65710,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3170,19 +3641,29 @@ var _idris_Canvas_46__123_requestAnimationFrame1_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
   i$valstack[i$valstack_base + 1] = null;
-  i$ret = new i$CON(65713,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65713,null);
+  i$ret = new i$CON(65723,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65723,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
 var _idris_Game_46__123_tick1_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
-  i$valstack[i$valstack_base + 2] = null;
+  i$valstack[i$valstack_base + 3] = null;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
-  i$SLIDE(2);
-  i$valstack_top = i$valstack_base + 2;
-  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40__124_fromInteger_32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32__124__41__32_PhysicsBody_58_Player_58__33_setL_58_0,[oldbase]);
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 3];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 1];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 2];
+  i$SLIDE(4);
+  i$valstack_top = i$valstack_base + 4;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_setL_58_0,[oldbase]);
+}
+var _idris_Lens_46__123_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_44__32_Game_32_c_32_p_32_instance_32_of_32_Lens_46_Lens_44__32_method_32_setL2_125_ = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  i$valstack[i$valstack_base + 1] = i$CON$0;
+  i$ret = new i$CON(1,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1]],null,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
 }
 var _idris_Draw_46__123_drawGame2_125_ = function(oldbase){
   var myoldbase;
@@ -3221,14 +3702,14 @@ var _idris_Draw_46__123_drawMapCell2_125_ = function(oldbase){
   i$valstack[i$valstack_base + 7] = 1.0;
   i$valstack[i$valstack_base + 4] = new i$CON(65655,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65655,null);
   i$valstack[i$valstack_base + 5] = new i$CON(65684,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65684,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
 var _idris_Main_46__123_main2_125_$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 3] = i$ret;
-  i$valstack[i$valstack_base + 4] = i$CON$65701;
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65712,null);
+  i$valstack[i$valstack_base + 4] = i$CON$65702;
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3247,7 +3728,7 @@ var _idris_Main_46__123_main2_125_ = function(oldbase){
 var _idris_Game_46__123_tick2_125_ = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
-  i$ret = new i$CON(65692,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65692,null);
+  i$ret = new i$CON(65689,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1]],_idris__123_APPLY0_125_$65689,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3272,14 +3753,14 @@ var _idris_Draw_46__123_drawMapCell3_125_ = function(oldbase){
   i$valstack[i$valstack_base + 5] = null;
   i$valstack[i$valstack_base + 6] = new i$CON(65656,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65656,null);
   i$valstack[i$valstack_base + 7] = new i$CON(65685,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65685,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
 var _idris_Main_46__123_main3_125_$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 3] = i$ret;
-  i$valstack[i$valstack_base + 4] = i$CON$65702;
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65712,null);
+  i$valstack[i$valstack_base + 4] = i$CON$65703;
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3295,24 +3776,6 @@ var _idris_Main_46__123_main3_125_ = function(oldbase){
   i$valstack_top += 1;
   i$CALL(_idris_Main_46__123_main3_125_$0,[oldbase,myoldbase]);
   i$CALL(_idris_Canvas_46_getElementById,[myoldbase]);
-}
-var _idris_Game_46__123_tick3_125_ = function(oldbase){
-  var myoldbase;
-  i$valstack_top += 5;
-  i$valstack[i$valstack_base + 1] = null;
-  i$valstack[i$valstack_base + 2] = null;
-  i$valstack[i$valstack_base + 3] = null;
-  i$valstack[i$valstack_base + 4] = null;
-  i$valstack[i$valstack_base + 5] = i$CON$65688;
-  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 1];
-  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 2];
-  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 3];
-  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 4];
-  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 5];
-  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base];
-  i$SLIDE(6);
-  i$valstack_top = i$valstack_base + 6;
-  i$CALL(_idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_58__33_map_58_0,[oldbase]);
 }
 var _idris_Draw_46__123_drawGame4_125_ = function(oldbase){
   var myoldbase;
@@ -3352,7 +3815,7 @@ var _idris_Draw_46__123_drawGame6_125_ = function(oldbase){
 var _idris_Draw_46__123_drawGame7_125_$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 5] = i$ret;
   i$valstack[i$valstack_base + 6] = new i$CON(65673,[i$valstack[i$valstack_base]],_idris__123_APPLY0_125_$65673,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 3],i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3387,7 +3850,7 @@ var _idris_Draw_46__123_drawGame7_125_ = function(oldbase){
 var _idris_Draw_46__123_drawGame8_125_$0 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 6] = i$ret;
   i$valstack[i$valstack_base + 7] = new i$CON(65674,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65674,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3414,7 +3877,7 @@ var _idris_Draw_46__123_drawGame9_125_ = function(oldbase){
   i$valstack[i$valstack_base + 6] = 3.125e-2;
   i$valstack[i$valstack_base + 6] = new i$CON(65650,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 6]],_idris__123_APPLY0_125_$65650,null);
   i$valstack[i$valstack_base + 7] = new i$CON(65675,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65675,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3427,14 +3890,14 @@ var _idris_Draw_46__123_drawGame10_125_ = function(oldbase){
   i$valstack[i$valstack_base + 7] = 32.0;
   i$valstack[i$valstack_base + 6] = new i$CON(65653,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65653,null);
   i$valstack[i$valstack_base + 7] = new i$CON(65676,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65676,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
 var _idris_Draw_46__123_drawGame11_125_$1 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 6] = i$ret;
   i$valstack[i$valstack_base + 7] = new i$CON(65666,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],_idris__123_APPLY0_125_$65666,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65712,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 6],i$valstack[i$valstack_base + 7]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3479,8 +3942,8 @@ var _idris_Prelude_46_Applicative_46__64_Prelude_46_Applicative_46_Applicative_3
   i$valstack_top += 3;
   i$valstack[i$valstack_base + 4] = null;
   i$valstack[i$valstack_base + 5] = null;
-  i$valstack[i$valstack_base + 6] = new i$CON(65705,[i$valstack[i$valstack_base + 3]],_idris__123_APPLY0_125_$65705,null);
-  i$ret = new i$CON(65712,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 6]],_idris__123_APPLY0_125_$65712,null);
+  i$valstack[i$valstack_base + 6] = new i$CON(65714,[i$valstack[i$valstack_base + 3]],_idris__123_APPLY0_125_$65714,null);
+  i$ret = new i$CON(65722,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 5],i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 6]],_idris__123_APPLY0_125_$65722,null);
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
 }
@@ -3493,7 +3956,7 @@ var _idris_Prelude_46_Applicative_46__64_Prelude_46_Applicative_46_Applicative_3
   i$valstack[i$valstack_base + 9] = null;
   i$valstack[i$valstack_base + 10] = null;
   i$valstack[i$valstack_base + 11] = null;
-  i$valstack[i$valstack_base + 10] = new i$CON(65715,[i$valstack[i$valstack_base + 10],i$valstack[i$valstack_base + 11]],_idris__123_APPLY0_125_$65715,null);
+  i$valstack[i$valstack_base + 10] = new i$CON(65725,[i$valstack[i$valstack_base + 10],i$valstack[i$valstack_base + 11]],_idris__123_APPLY0_125_$65725,null);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 6];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 7];
   i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 8];
@@ -3537,7 +4000,7 @@ var _idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_
   i$valstack[i$valstack_base + 10] = null;
   i$valstack[i$valstack_base + 11] = null;
   i$valstack[i$valstack_base + 12] = null;
-  i$valstack[i$valstack_base + 12] = new i$CON(65720,[i$valstack[i$valstack_base + 12]],_idris__123_APPLY0_125_$65720,null);
+  i$valstack[i$valstack_base + 12] = new i$CON(65730,[i$valstack[i$valstack_base + 12]],_idris__123_APPLY0_125_$65730,null);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 9];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 10];
   i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 11];
@@ -3569,6 +4032,147 @@ var _idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_
       break;
   };
 }
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_getL_58_0$2 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 10] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 7];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 8];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 9];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 10];
+  i$SLIDE(5);
+  i$valstack_top = i$valstack_base + 5;
+  i$CALL(_idris_Prelude_46_Vect_46__43__43_,[oldbase]);
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_getL_58_0$1 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 13] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 10];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 11];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 12];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 13];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 4;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_getL_58_0$2,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Vect_46_concat,[myoldbase]);
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_getL_58_0$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 9] = i$ret;
+  i$valstack[i$valstack_base + 10] = null;
+  i$valstack[i$valstack_base + 11] = null;
+  i$valstack[i$valstack_base + 12] = null;
+  i$valstack[i$valstack_base + 13] = null;
+  i$valstack[i$valstack_base + 14] = null;
+  i$valstack[i$valstack_base + 15] = null;
+  i$valstack[i$valstack_base + 16] = null;
+  i$valstack[i$valstack_base + 17] = i$CON$65691;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 13];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 14];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 15];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 16];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 17];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 4];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 6;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_getL_58_0$1,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_58__33_map_58_0,[myoldbase]);
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_getL_58_0 = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 15;
+  i$PROJECT(i$valstack[i$valstack_base + 2],3,3);
+  i$valstack[i$valstack_base + 6] = null;
+  i$valstack[i$valstack_base + 7] = null;
+  i$valstack[i$valstack_base + 8] = null;
+  i$valstack[i$valstack_base + 9] = null;
+  i$valstack[i$valstack_base + 10] = null;
+  ;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 9];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 10];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 3];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 3;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_getL_58_0$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32_n_32_PhysicsBody_58_Map_32_n_58__33_getL_58_0,[myoldbase]);
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_setL_58_0$2 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 7] = i$ret;
+  i$ret = new i$CON(0,[i$valstack[i$valstack_base + 4],i$valstack[i$valstack_base + 7],i$valstack[i$valstack_base + 6]],null,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_setL_58_0$1 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 12] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 7];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 8];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 9];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 10];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 11];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 12];
+  i$valstack[i$valstack_top + 6] = i$valstack[i$valstack_base + 5];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 7;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_setL_58_0$2,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Vect_46_zipWith,[myoldbase]);
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_setL_58_0$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 17] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 12];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 13];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 14];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 15];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 16];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 17];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 6;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_setL_58_0$1,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_58__33_map_58_0,[myoldbase]);
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_setL_58_0 = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 15;
+  i$PROJECT(i$valstack[i$valstack_base + 3],4,3);
+  i$valstack[i$valstack_base + 7] = null;
+  i$valstack[i$valstack_base + 8] = null;
+  i$valstack[i$valstack_base + 9] = null;
+  i$valstack[i$valstack_base + 10] = null;
+  i$valstack[i$valstack_base + 11] = i$CON$65693;
+  i$valstack[i$valstack_base + 12] = null;
+  i$valstack[i$valstack_base + 13] = null;
+  i$valstack[i$valstack_base + 14] = null;
+  i$valstack[i$valstack_base + 15] = null;
+  i$valstack[i$valstack_base + 16] = i$CON$65694;
+  i$valstack[i$valstack_base + 17] = null;
+  i$valstack[i$valstack_base + 18] = null;
+  ;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 17];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 18];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 2];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 4;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40_c_32__43__32_p_41__32_PhysicsBody_58_Game_32_c_32_p_58__33_setL_58_0$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Vect_46_drop,[myoldbase]);
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40__124_fromInteger_32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32__124__41__32_PhysicsBody_58_MapCell_58__33_getL_58_0 = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 3;
+  i$valstack[i$valstack_base + 1] = 0.0;
+  i$valstack[i$valstack_base + 2] = 0.0;
+  i$valstack[i$valstack_base + 3] = i$CON$0;
+  i$valstack[i$valstack_base + 2] = new i$CON(1,[i$valstack[i$valstack_base + 2],i$valstack[i$valstack_base + 3]],null,null);
+  i$valstack[i$valstack_base + 1] = new i$CON(1,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],null,null);
+  i$valstack[i$valstack_base + 2] = i$CON$0;
+  i$valstack[i$valstack_base + 1] = new i$CON(0,[i$valstack[i$valstack_base],i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],null,null);
+  i$valstack[i$valstack_base + 2] = i$CON$0;
+  i$ret = new i$CON(1,[i$valstack[i$valstack_base + 1],i$valstack[i$valstack_base + 2]],null,null);
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
 var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40__124_fromInteger_32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32_1_32__44__32__124__41__32_PhysicsBody_58_Player_58__33_getL_58_0 = function(oldbase){
   var myoldbase;
   i$valstack_top += 1;
@@ -3584,6 +4188,45 @@ var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32__40__124_fromInteger_32_1_32__44_
   i$ret = i$valstack[i$valstack_base + 2];
   i$valstack_top = i$valstack_base;
   i$valstack_base = oldbase;
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32_n_32_PhysicsBody_58_Map_32_n_58__33_getL_58_0$0 = function(oldbase,myoldbase){
+  i$valstack[i$valstack_base + 10] = i$ret;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 5];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 6];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 7];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 8];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 9];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 10];
+  i$SLIDE(6);
+  i$valstack_top = i$valstack_base + 6;
+  i$CALL(_idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_58__33_map_58_0,[oldbase]);
+}
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32_n_32_PhysicsBody_58_Map_32_n_58__33_getL_58_0 = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 12;
+  i$PROJECT(i$valstack[i$valstack_base + 2],3,2);
+  i$valstack[i$valstack_base + 5] = null;
+  i$valstack[i$valstack_base + 6] = null;
+  i$valstack[i$valstack_base + 7] = null;
+  i$valstack[i$valstack_base + 8] = null;
+  i$valstack[i$valstack_base + 9] = i$CON$65695;
+  i$valstack[i$valstack_base + 10] = null;
+  i$valstack[i$valstack_base + 11] = null;
+  i$valstack[i$valstack_base + 12] = null;
+  i$valstack[i$valstack_base + 13] = null;
+  i$valstack[i$valstack_base + 14] = i$CON$65696;
+  ;
+  i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 10];
+  i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 11];
+  i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 12];
+  i$valstack[i$valstack_top + 3] = i$valstack[i$valstack_base + 13];
+  i$valstack[i$valstack_top + 4] = i$valstack[i$valstack_base + 14];
+  i$valstack[i$valstack_top + 5] = i$valstack[i$valstack_base + 3];
+  myoldbase = i$valstack_base;
+  i$valstack_base = i$valstack_top;
+  i$valstack_top += 6;
+  i$CALL(_idris_Lens_46__64_Lens_46_Lens_36_Vect_32_n_32_PhysicsBody_58_Map_32_n_58__33_getL_58_0$0,[oldbase,myoldbase]);
+  i$CALL(_idris_Prelude_46_Functor_46__64_Prelude_46_Functor_46_Functor_36_Vect_32_n_58__33_map_58_0,[myoldbase]);
 }
 var _idris_Prelude_46_Traversable_46__64_Prelude_46_Traversable_46_Traversable_36_Vect_32_n_58__33_traverse_58_0$10 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 11] = i$ret;
@@ -3620,7 +4263,7 @@ var _idris_Prelude_46_Traversable_46__64_Prelude_46_Traversable_46_Traversable_3
   i$valstack[i$valstack_base + 13] = null;
   i$valstack[i$valstack_base + 14] = null;
   i$valstack[i$valstack_base + 15] = null;
-  i$valstack[i$valstack_base + 15] = new i$CON(65723,[i$valstack[i$valstack_base + 15]],_idris__123_APPLY0_125_$65723,null);
+  i$valstack[i$valstack_base + 15] = new i$CON(65733,[i$valstack[i$valstack_base + 15]],_idris__123_APPLY0_125_$65733,null);
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 11];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 12];
   i$valstack[i$valstack_top + 2] = i$valstack[i$valstack_base + 13];
@@ -3675,7 +4318,7 @@ var _idris_Prelude_46_Traversable_46__64_Prelude_46_Traversable_46_Traversable_3
 }
 var _idris_Prelude_46_Traversable_46__64_Prelude_46_Traversable_46_Traversable_36_Vect_32_n_58__33_traverse_58_0$2 = function(oldbase,myoldbase){
   i$valstack[i$valstack_base + 12] = i$ret;
-  i$valstack[i$valstack_base + 13] = i$CON$65708;
+  i$valstack[i$valstack_base + 13] = i$CON$65718;
   i$valstack[i$valstack_top] = i$valstack[i$valstack_base + 12];
   i$valstack[i$valstack_top + 1] = i$valstack[i$valstack_base + 13];
   myoldbase = i$valstack_base;
@@ -3823,7 +4466,16 @@ var _idris_io_95_bind_95_case = function(oldbase){
   i$valstack_top = i$valstack_base + 2;
   i$CALL(_idris__123_APPLY0_125_,[oldbase]);
 }
+var _idris_Lens_46__64_Lens_46_Lens_36_Vect_32_n_32_PhysicsBody_58_Map_32_n_58__33_getL_58_0_95_case = function(oldbase){
+  var myoldbase;
+  i$valstack_top += 1;
+  i$PROJECT(i$valstack[i$valstack_base + 6],9,2);
+  i$ret = i$valstack[i$valstack_base + 9];
+  i$valstack_top = i$valstack_base;
+  i$valstack_base = oldbase;
+}
 var i$CON$0 = new i$CON(0,[],null,null);
+var i$CON$1 = new i$CON(1,[],null,null);
 var i$CON$65658 = new i$CON(65658,[],_idris__123_APPLY0_125_$65658,null);
 var i$CON$65660 = new i$CON(65660,[],_idris__123_APPLY0_125_$65660,null);
 var i$CON$65662 = new i$CON(65662,[],_idris__123_APPLY0_125_$65662,null);
@@ -3838,16 +4490,22 @@ var i$CON$65680 = new i$CON(65680,[],_idris__123_APPLY0_125_$65680,null);
 var i$CON$65681 = new i$CON(65681,[],_idris__123_APPLY0_125_$65681,null);
 var i$CON$65682 = new i$CON(65682,[],_idris__123_APPLY0_125_$65682,null);
 var i$CON$65688 = new i$CON(65688,[],_idris__123_APPLY0_125_$65688,null);
-var i$CON$65690 = new i$CON(65690,[],_idris__123_APPLY0_125_$65690,null);
 var i$CON$65691 = new i$CON(65691,[],_idris__123_APPLY0_125_$65691,null);
 var i$CON$65693 = new i$CON(65693,[],_idris__123_APPLY0_125_$65693,null);
 var i$CON$65694 = new i$CON(65694,[],_idris__123_APPLY0_125_$65694,null);
-var i$CON$65697 = new i$CON(65697,[],_idris__123_APPLY0_125_$65697,null);
-var i$CON$65700 = new i$CON(65700,[],_idris__123_APPLY0_125_$65700,null);
+var i$CON$65695 = new i$CON(65695,[],_idris__123_APPLY0_125_$65695,null);
+var i$CON$65696 = new i$CON(65696,[],_idris__123_APPLY0_125_$65696,null);
+var i$CON$65698 = new i$CON(65698,[],_idris__123_APPLY0_125_$65698,null);
 var i$CON$65701 = new i$CON(65701,[],_idris__123_APPLY0_125_$65701,null);
 var i$CON$65702 = new i$CON(65702,[],_idris__123_APPLY0_125_$65702,null);
 var i$CON$65703 = new i$CON(65703,[],_idris__123_APPLY0_125_$65703,null);
-var i$CON$65708 = new i$CON(65708,[],_idris__123_APPLY0_125_$65708,null);
+var i$CON$65704 = new i$CON(65704,[],_idris__123_APPLY0_125_$65704,null);
+var i$CON$65705 = new i$CON(65705,[],_idris__123_APPLY0_125_$65705,null);
+var i$CON$65706 = new i$CON(65706,[],_idris__123_APPLY0_125_$65706,null);
+var i$CON$65709 = new i$CON(65709,[],_idris__123_APPLY0_125_$65709,null);
+var i$CON$65711 = new i$CON(65711,[],_idris__123_APPLY0_125_$65711,null);
+var i$CON$65712 = new i$CON(65712,[],_idris__123_APPLY0_125_$65712,null);
+var i$CON$65718 = new i$CON(65718,[],_idris__123_APPLY0_125_$65718,null);
 var main = function(){
 if (typeof document != "undefined" && (document.readyState == "complete" || document.readyState == "loaded")) {
     var vm = new i$VM();

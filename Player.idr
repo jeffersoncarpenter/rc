@@ -21,6 +21,7 @@ mkPlayer pos = MkPlayer $ MkPhysicsBody
                             [-0.5, 0.5],
                             [0.5, 0.5],
                             [0.5, -0.5]])
+               True
 
 instance Lens (Vect 1 PhysicsBody) Player where
   getL (MkPlayer pb) = [pb]
