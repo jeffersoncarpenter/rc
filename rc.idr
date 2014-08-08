@@ -9,12 +9,6 @@ import Map
 %access public
 %default total
 
-data FunctorVect : Type
-
-
-natToFloat : Nat -> Float
-natToFloat = cast . cast . cast
-
 
 partial
 animate : Game c p -> Int -> IO ()

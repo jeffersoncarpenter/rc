@@ -52,9 +52,6 @@ move pb = record {
   angle = angle pb + angularVelocity pb
   } pb
 
-moveAll : Vect n PhysicsBody -> Vect n PhysicsBody
-moveAll = map move
-
 
 applyGravity : PhysicsBody -> PhysicsBody
 applyGravity pb = record {
@@ -63,4 +60,4 @@ applyGravity pb = record {
 
 
 runPhysics : Vect n PhysicsBody -> Vect n PhysicsBody
-runPhysics = moveAll . (map applyGravity)
+runPhysics = (map move) . (map applyGravity)
