@@ -24,7 +24,9 @@ spawnAPlayer (MkGame (MkMap m ss) ps c) =
 instance Lens (Vect (c + p) PhysicsBody) (Game c p) where
   getL (MkGame m ps _) =
     replace {P = (flip Vect) PhysicsBody} (cong $ multOneRightNeutral p)
-    (Vect.(++) (getL m) (concat $ (map getL) ps))
+    (Vect.(++)
+     (getL m)
+     (concat $ (map getL) ps))
   setL pbs (MkGame m ps ctx) =
     let cPBs = take c pbs in
     let pPBs = map (\pb => (the (Vect 1 PhysicsBody) [pb])) $ drop c pbs in

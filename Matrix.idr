@@ -23,7 +23,6 @@ crossProduct2 : (Num a) => Vect 2 a -> Vect 2 a -> a
 crossProduct2 a b = head $ crossProduct (0::a) (0::b)
 
 
-
 ||| Some specific operations currently only defined for the Float type
 
 magnitude : Vect (S n) Float -> Float
@@ -34,6 +33,9 @@ distance a b = magnitude [| Classes.(-) a b |]
 
 normalize : Vect (S n) Float -> Vect (S n) Float
 normalize v = map (\x => x / magnitude v) v
+
+scale : (Num a) => a -> Vect n a -> Vect n a
+scale k v = map (Classes.(*) k) v
 
 
 

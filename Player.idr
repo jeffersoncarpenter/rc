@@ -17,10 +17,8 @@ mkPlayer pos = MkPlayer $ MkPhysicsBody
                1
                0
                [0, 0]
-               (ConvexPoly [[-0.5, -0.5],
-                            [-0.5, 0.5],
-                            [0.5, 0.5],
-                            [0.5, -0.5]])
+               (Circle 0.8)
+               0.8
                True
 
 instance Lens (Vect 1 PhysicsBody) Player where

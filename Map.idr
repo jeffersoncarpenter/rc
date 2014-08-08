@@ -17,10 +17,11 @@ instance Lens (Vect 1 PhysicsBody)  MapCell where
                                     Infinity
                                     0
                                     [0, 0]
-                                    (ConvexPoly [[-0.5, -0.5],
-                                                 [-0.5, 0.5],
-                                                 [0.5, 0.5],
-                                                 [0.5, -0.5]])
+                                    (ConvexPoly (4 ** [[-0.5, -0.5],
+                                                       [-0.5, 0.5],
+                                                       [0.5, 0.5],
+                                                       [0.5, -0.5]]))
+                                    0.8 -- 0.8 >= 1 / sqrt(2)
                                     False]
   setL _ c = c
 

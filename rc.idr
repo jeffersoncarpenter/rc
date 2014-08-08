@@ -17,15 +17,24 @@ animate game dt = do
   drawGame game
 
 
-onClickCanvas : (() -> IO ()) -> IO ()
+onClickCanvas : (Float -> Float -> IO ()) -> IO ()
 onClickCanvas f = mkForeign
-                  (FFun "$('#canvas').on('click', %0)" [FFunction FUnit (FAny (IO ()))] FUnit) f
+                  (FFun """
+(function () {
+var func = %0;
+$('#canvas').on('click', function (ev) {
+func(ev.clientX, ev.clientY);
+});
+})();
+""" [FFunction FFloat (FFunction FFloat (FAny (IO ())))] FUnit) f
 
 
-clickFunc : () -> IO ()
-clickFunc _ = putStr "HELLO"
+clickFunc : Float -> Float -> IO ()
+clickFunc x y = do
+  putStr (show x)
+  putStr (show y)
 
-
+  
 createGame : Context2D -> Game 7 1
 createGame ctx = spawnAPlayer $ MkGame level1 [] ctx
 
