@@ -38,12 +38,13 @@ drawMap ctx (MkMap cells _) = traverse (drawMapCell ctx) cells
 
 drawPlayer : Context2D -> Player -> IO ()
 drawPlayer ctx (MkPlayer pb) = do
+  beginPath ctx
   (let [x, y] = position pb in arc ctx x y 0.4 0 (2 * pi))
   stroke ctx
 
 
 drawGame : Game c p -> IO ()
-drawGame (MkGame map players ctx) = do
+drawGame (MkGame map players ctx t) = do
   save ctx
   (let [x, y] = canvasDimensions in clearRect ctx 0 0 x y)
   scale ctx pixelsPerUnit pixelsPerUnit

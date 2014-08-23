@@ -27,8 +27,11 @@ data CollisionPoint : CollisionObject -> Type where
 data CollisionInfo : CollisionObject -> CollisionObject -> Type where
   MkCollisionInfo : CollisionPoint c1 -> -- collision point on object 1
                     CollisionPoint c2 -> -- collision point on object 2
-                    Float ->             -- time index of collision
+                    Float ->             -- time index just before collision
                     CollisionInfo c1 c2
+
+
+  
 
 
 -- let the circle have radius r and be centered at the origin
@@ -54,14 +57,13 @@ collide : (c1 : CollisionObject) ->
           Vect 2 Float ->
           Maybe (CollisionInfo c1 c2)
 collide (Circle r1) (Circle r2) d v =
-  let solution = head' $
-                 sort $
-                 filter (\t => t >= 0 && t <= 1) $
+  let solution = (head' . sort . filter (\t => t >= 0 && t <= 1)) $
                  intersectCircleWithLine (r1 + r2) d v in
   map (\t => let d' = [| Classes.(+) d (scale t v) |] in
              MkCollisionInfo (CircleCollisionPoint d')
                              (CircleCollisionPoint (scale (-1) d'))
                              t) solution
+collide (Circle r1) (ConvexPoly (n ** ps)) d v = Nothing
 
 
 partial
@@ -96,7 +98,7 @@ record PhysicsBody : Type where
   
 gravity : PhysicsBody -> Vect 2 Float
 gravity pb = if feelsGravity pb
-                  then [0, 0.01]
+                  then [0, 0.0001]
                   else pure 0
 
 -- electricField : PhysicsBody -> Vect 2 Float -> Vect 2 Float
@@ -109,18 +111,19 @@ gravity pb = if feelsGravity pb
 --                 distance (position p1) (position p2)
 
 
-move : PhysicsBody -> PhysicsBody
-move pb = record {
-  position = [| Classes.(+) (position pb) (velocity pb) |],
-  angle = angle pb + angularVelocity pb
+move : Float -> PhysicsBody -> PhysicsBody
+move dt pb = record { 
+  position = [| Classes.(+) (position pb) (scale dt $ velocity pb) |],
+  angle = angle pb + dt * angularVelocity pb
   } pb
 
 
-applyGravity : PhysicsBody -> PhysicsBody
-applyGravity pb = record {
-  velocity = [| Classes.(+) (velocity pb) (gravity pb) |]
+applyGravity : Float -> PhysicsBody -> PhysicsBody
+applyGravity dt pb = record {
+  velocity = [| Classes.(+) (velocity pb) (map (Classes.(*) dt) (gravity pb)) |]
   } pb
 
 
-runPhysics : Vect n PhysicsBody -> Vect n PhysicsBody
-runPhysics = (map move) . (map applyGravity)
+
+runPhysics : Float -> Vect n PhysicsBody -> Vect n PhysicsBody
+runPhysics dt = (map (applyGravity dt)) . (map (move dt))

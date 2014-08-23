@@ -12,8 +12,9 @@ import Map
 
 partial
 animate : Game c p -> Int -> IO ()
-animate game dt = do
-  requestAnimationFrame $ animate (tick game)
+animate game t = do
+  (putStrLn . show) (dt (cast t) game)
+  requestAnimationFrame $ animate (tick (cast t) game)
   drawGame game
 
 
@@ -36,7 +37,7 @@ clickFunc x y = do
 
   
 createGame : Context2D -> Game 7 1
-createGame ctx = spawnAPlayer $ MkGame level1 [] ctx
+createGame ctx = spawnAPlayer $ MkGame level1 [] ctx 0
 
 
 partial
