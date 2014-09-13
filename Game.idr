@@ -13,35 +13,42 @@ import Player
 data Game : Nat -> Nat -> Type where
   MkGame : (Map num_cells) ->
            (Vect num_players Player) ->
-           Context2D ->
            Float ->
            Game num_cells num_players
 
 
+class GameObject a where
+  draw : Context2D -> a -> IO ()
+
+
+spawnPlayer : Vect 2 Float -> Game c p -> Game c (S p)
+spawnPlayer pos (MkGame m ps t) = MkGame m ((mkPlayer pos)::ps) t
+
+
 spawnAPlayer : Game c p -> Game c (S p)
-spawnAPlayer (MkGame (MkMap m ss) ps c t) =
-  MkGame (MkMap m ss) ((mkPlayer $ head ss)::ps) c t
+spawnAPlayer (MkGame (MkMap m ss) ps t) =
+  MkGame (MkMap m ss) ((mkPlayer $ head ss)::ps) t
 
 
 instance Lens (Vect (c + p) PhysicsBody) (Game c p) where
-  getL (MkGame m ps _ _) =
+  getL (MkGame m ps _) =
     replace {P = (flip Vect) PhysicsBody} (cong $ multOneRightNeutral p)
     (Vect.(++)
      (getL m)
      (concat $ (map getL) ps))
-  setL pbs (MkGame m ps ctx t) =
+  setL pbs (MkGame m ps t) =
     let cPBs = take c pbs in
     let pPBs = map (\pb => (the (Vect 1 PhysicsBody) [pb])) $ drop c pbs in
-    MkGame (setL cPBs m) (zipWith setL pPBs ps) ctx t
+    MkGame (setL cPBs m) (zipWith setL pPBs ps) t
 
 
 -- gets difference between given time index and game's time index
 dt : Float -> Game c p -> Float
-dt t' (MkGame _ _ _ t) = t' - t
+dt t' (MkGame _ _ t) = t' - t
 
 -- sets time index of game
 sett : Float -> Game c p -> Game c p
-sett t' (MkGame m ps ctx _) = MkGame m ps ctx t'
+sett t' (MkGame m ps _) = MkGame m ps t'
 
 
 tick : Float -> Game c p -> Game c p

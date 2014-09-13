@@ -23,17 +23,13 @@ unitsPerPixel : Float
 unitsPerPixel = 1 / pixelsPerUnit
 
 
-private
-drawMapCell : Context2D -> MapCell -> IO ()
-drawMapCell ctx (MkMapCell [x, y]) = do
+drawMap : Context2D -> Map n -> IO (Vect n ())
+drawMap ctx (MkMap cells _) = traverse (\([x, y]) => do
   save ctx
   translate ctx x y
   strokeRect ctx 0 0 1 1
   fillRect ctx 0 0 1 1
-  restore ctx
-  
-drawMap : Context2D -> Map n -> IO (Vect n ())
-drawMap ctx (MkMap cells _) = traverse (drawMapCell ctx) cells
+  restore ctx) cells
 
 
 drawPlayer : Context2D -> Player -> IO ()
@@ -43,8 +39,8 @@ drawPlayer ctx (MkPlayer pb) = do
   stroke ctx
 
 
-drawGame : Game c p -> IO ()
-drawGame (MkGame map players ctx t) = do
+drawGame : Context2D -> Game c p -> IO ()
+drawGame ctx (MkGame map players t) = do
   save ctx
   (let [x, y] = canvasDimensions in clearRect ctx 0 0 x y)
   scale ctx pixelsPerUnit pixelsPerUnit

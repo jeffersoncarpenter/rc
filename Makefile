@@ -1,2 +1,5 @@
 all:
-	idris --codegen javascript -p canvas -p matrix rc.idr -o rc.js
+	idris --codegen javascript -p neweffects -p canvas -p matrix rc.idr -o rc.js
+
+repl:
+	idris -p neweffects -p canvas -p matrix rc.idr

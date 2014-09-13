@@ -11,11 +11,10 @@ import Map
 
 
 partial
-animate : Game c p -> Int -> IO ()
-animate game t = do
-  (putStrLn . show) (dt (cast t) game)
-  requestAnimationFrame $ animate (tick (cast t) game)
-  drawGame game
+animate : Context2D -> Game c p -> Int -> IO ()
+animate ctx game t = do
+  requestAnimationFrame $ animate ctx (tick (cast t) game)
+  drawGame ctx game
 
 
 onClickCanvas : (Float -> Float -> IO ()) -> IO ()
@@ -35,9 +34,9 @@ clickFunc x y = do
   putStr (show x)
   putStr (show y)
 
-  
-createGame : Context2D -> Game 7 1
-createGame ctx = spawnAPlayer $ MkGame level1 [] ctx 0
+
+createGame : Game 7 1
+createGame = spawnAPlayer $ MkGame level1 [] 0
 
 
 partial
@@ -46,5 +45,5 @@ main = do
   onClickCanvas clickFunc
   elem <- getElementById "canvas"
   ctx <- getContext2D elem
-  animate (createGame ctx) 0
+  animate ctx createGame 0
   return ()

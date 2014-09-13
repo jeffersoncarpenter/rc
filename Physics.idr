@@ -34,9 +34,9 @@ data CollisionInfo : CollisionObject -> CollisionObject -> Type where
   
 
 
--- let the circle have radius r and be centered at the origin
--- let the line be the path of a particle at position p with velocity v
--- return all time indexes at which the point crosses the circle
+-- let a circle have radius r and be centered at the origin
+-- let a line be defined p + t v for p, v below
+-- return all t's where the line crosses the circle
 intersectCircleWithLine : Float -> Vect 2 Float -> Vect 2 Float -> List Float
 intersectCircleWithLine r p v =
   let r2 = r * r in
@@ -44,9 +44,9 @@ intersectCircleWithLine r p v =
   let v2 = dotProduct v v in
   let pv = dotProduct p v in
   let discriminant = r2 + p2 * v2 - (p2 + v2) in
-  sort $ the (List Float)
-  [(-pv + sqrt(discriminant)) / v2,
-   (-pv - sqrt(discriminant)) / v2]
+  the (List Float)
+  [(-pv - sqrt(discriminant)) / v2,
+   (-pv + sqrt(discriminant)) / v2]
 
 
 
