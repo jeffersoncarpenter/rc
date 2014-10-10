@@ -1,26 +1,30 @@
 module Player
 
+import Game
 import Physics
 
 %access public
 %default total
 
-data Player = MkPlayer PhysicsBody
 
-mkPlayer : Vect 2 Float -> Player
-mkPlayer pos = MkPlayer $ MkPhysicsBody
-               pos
-               [0, 0]
-               1
-               0
-               0
-               1
-               0
-               [0, 0]
-               (Circle 0.8)
-               0.8
-               True
+mkPlayer : Vect 2 Float -> GameObject
+mkPlayer pos = MkGameObject
+               (MkPhysicsBody
+                pos
+                [0, 0]
+                1
+                0
+                0
+                1
+                0
+                [0, 0]
+                (Circle 0.8)
+                0.8
+                True)
+               (\ctx, pb => do
+                   beginPath ctx
+                   (let [x, y] = position pb in arc ctx x y 0.4 0 (2 * pi))
+                   stroke ctx)
 
-instance Lens (Vect 1 PhysicsBody) Player where
-  getL (MkPlayer pb) = [pb]
-  setL [pb] _ = MkPlayer pb
+spawnPlayer : Vect 2 Float -> Game n -> Game (S n)
+spawnPlayer pos game = (mkPlayer pos)::game

@@ -3,7 +3,6 @@ module Physics
 import Data.HVect
 import Matrix
 import ExFloat
-import Lens
 
 %access public
 %default total
@@ -98,7 +97,7 @@ record PhysicsBody : Type where
   
 gravity : PhysicsBody -> Vect 2 Float
 gravity pb = if feelsGravity pb
-                  then [0, 0.0001]
+                  then [0, 0.00001]
                   else pure 0
 
 -- electricField : PhysicsBody -> Vect 2 Float -> Vect 2 Float
