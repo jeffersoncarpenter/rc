@@ -24,8 +24,7 @@ unitsPerPixel = 1 / pixelsPerUnit
 partial
 animate : Context2D -> Game n -> Int -> Int -> IO ()
 animate ctx game t t' = do
-  putStrLn $ show (t' - t)
-  requestAnimationFrame $ animate ctx (tick (cast (t' - t)) game) t'
+  requestAnimationFrame $ animate ctx (tick 16 game) t'
   save ctx
   (let [x, y] = canvasDimensions in clearRect ctx 0 0 x y)
   scale ctx pixelsPerUnit pixelsPerUnit
@@ -38,6 +37,7 @@ partial
 startGame : Context2D -> Game n -> IO ()
 startGame ctx g = do
   requestAnimationFrame (\t => do
+    putStrLn (show t)
     requestAnimationFrame $ animate ctx g t
     return ())
   return ()
